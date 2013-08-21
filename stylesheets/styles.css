@@ -63,9 +63,8 @@ summary {
   display: block;
 }
 
-header {
-  margin : 50;
-  padding : 10;
+header + p {
+  padding-right : 2cm;
 }
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3

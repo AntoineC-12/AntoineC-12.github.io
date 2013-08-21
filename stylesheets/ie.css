@@ -1,3 +1,7 @@
 nav {
   display: none;
 }
+
+header + p {
+  padding: 25;
+}

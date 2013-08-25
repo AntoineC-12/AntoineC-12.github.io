@@ -180,8 +180,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
+  /*font-size: 1em;
+  margin: 1.33em 0;*/
+  border: 2px red solid;
 }
 
 h5 {
@@ -524,7 +525,7 @@ body {
   background: url(../images/body-background.png) #eae6d1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, /*h4*/, h5, h6 {
   color: #333;
   margin: 0 0 10px;
 }
@@ -546,17 +547,13 @@ h2 {
   color: #393939;
 }
 
-h3, h4, h5, h6 {
+h3, /*h4*/, h5, h6 {
   color: #666666;
 }
 
 h3 {
   font-size: 18px;
   line-height: 24px;
-}
-
-h2 + h3 {
-  padding-left: 1em;
 }
 
 a {
@@ -585,7 +582,7 @@ strong {
   width: 800px;   /*650px;*/
   margin: 0 auto;
   position: relative;
-  /*border: 3px blue solid;*/
+  border: 3px blue solid;
 }
 
 section img {
@@ -709,7 +706,7 @@ header p {
   left: 0;
   right: 50%;
   height: 50px;
-  margin-right: -482px;
+  margin-right: -382px;
   position: fixed;
   top: 115px;
   background: #ffcc00;
@@ -745,7 +742,7 @@ header p {
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
   background-color: #FFE788;
-  margin-left: 10px;
+  margin-left: 5px;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -767,7 +764,7 @@ header p {
 #banner .fork {
   position: fixed;
   left: 50%;
-  margin-left: -455px;
+  margin-left: -325px;
   padding: 10px 12px;
   margin-top: 6px;
   line-height: 14px;
@@ -855,18 +852,15 @@ nav ul li {
   padding: 5px 0px;
   line-height: 16px;
 }
-nav ul li.tag-h2 {
+nav ul li.tag-h1 {
   font-size: 1.2em;
 }
-nav ul li.tag-h2 a {
+nav ul li.tag-h1 a {
   font-weight: bold;
   color: #333;
 }
-nav ul li.tag-h3 + .tag-h2 {
-  font-size: 0.75em;
-  padding-left: 1em;
+nav ul li.tag-h2 + .tag-h1 {
   margin-top: 10px;
-
 }
 nav ul a {
   color: #666;

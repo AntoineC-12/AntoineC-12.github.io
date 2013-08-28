@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+  require("php_scripts/common.php");
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -32,16 +35,16 @@
         <ul></ul>
       </nav>
       <section class="text">
-        <h1 class="cv" id="title">My resume</h1>
+        <h1 class="cv" id="title"><?php echo $lang['title']; ?></h1>
         <p>A dynamic, team-spirited and ambitious student in computer engineering at the Université de Technologie de Compiègne (FRANCE) looking for a 6-month internship in your company.</p>
         <h2 id="education">
-<a name="education" class="anchor" href="#education"><span class="octicon octicon-link"></span></a>Educations</h2>
+<a name="education" class="anchor" href="#education"><span class="octicon octicon-link"></span></a><?php echo $lang['education']; ?></h2>
 
 <p><ul>
   <li>
   <p><strong>Diplôme d'ingénieur en informatique</strong> (5-year Engineering degree in computer science)<span class="right">Feb. 2011-present</span><br>
   <span class="tabulation"><em>Université de Technologie de Compiègne</em>, Compiègne, FRANCE </span><br>
-  <span class="tabulation" id="inge_expect">*Degree expected in February 2016</span></p>
+  <span class="tabulation"><?php echo $lang['inge_expec']; ?></span></p>
   </li>
   <li>
   <p><strong>Classe Préparatoire </strong> (6 months of preparation program for competitive exams)<span class="right">Sep. 2010-Feb. 2011</span><br>

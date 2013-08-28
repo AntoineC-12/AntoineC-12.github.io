@@ -2,7 +2,7 @@
 <script type="text/javascript" language="javascript">
  
 $(function() {
-    var language = 'italian';
+    var language = 'fra';
     $.ajax({
         url: 'language.xml',
         success: function(xml) {

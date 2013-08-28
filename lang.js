@@ -1,4 +1,4 @@
-<script src="path/to/jquery.min.js"></script>
+<script src="me/js/jquery.min.js"></script>
 <script type="text/javascript" language="javascript">
  
 $(function() {

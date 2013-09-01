@@ -33,7 +33,9 @@
       </nav>
       <section class="text">
         <h1 class="cv" id="title">My resume</h1>
-        <p>A dynamic, team-spirited and ambitious student in computer engineering at the Université de Technologie de Compiègne (FRANCE) looking for a 6-month internship in your company.</p>
+        <p>A dynamic, team-spirited and ambitious student in computer engineering at the <a href="http://www.utc.fr">Université de Technologie de Compiègne</a> (FRANCE) looking for a 6-month internship in your company.</p>
+        <h2>
+<a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>About me</h2>
         <h2>
 <a name="education" class="anchor" href="#education"><span class="octicon octicon-link"></span></a>Educations</h2>
 
@@ -54,24 +56,38 @@
 </ul></p>
 
 <h2>
-<a name="experience" class="anchor" href="#experience"><span class="octicon octicon-link"></span></a>Experience</h2>
+<a name="experience" class="anchor" href="#experience"><span class="octicon octicon-link"></span></a>Projects</h2>
 
-<h3 class="subsection" id="project_school">Projects</h3>
+<h3 class="subsection" id="project_school">School projects</h3>
 <p><ul>
 	<li>
 	<strong>Notes Manager :</strong> Pairs of students were asked to design and program a software that could manage notes (text and media files). In order to do that, we had to create an UML (class (à finir)).<br>
 		<ul>
 		<li>Make the code the most portable as possible.</li>
+		<li><a href="https://github.com/AntoineC-12/Notify">Here the remote repository</a> of this project.</li>
 		</ul>
 	</li>
 	<li>
 	<strong>Database designing and supporting :</strong> Groups of 3-4 students were given a topic with a CDC. 
+		<ul>
+		<li><a href="https://github.com/AntoineC-12/NF17_projet">Here the GitHub repository</a> of the PHP part of the project.</li>
+		</ul>
 	</li>
 </ul></p>
 <h3 class="subsection" id="project_personal">Personal projects</h3>
 <p><ul>
 	<li>
-	<strong>Setting up a Web Server :</strong> I set up my own web server on an old computer. For this purpose I 
+	<strong>Setting up my own Web Server :</strong> I set up my own web server on an old computer. For this purpose I used features provided with the Debian operating system. I succesfully set up and configured services provided by most of the Webserver :
+		<ul>
+		<li>The Apache HTTP server</li>
+		<li>The vsFTP daemon for a FTP server. I set up personal directory with chroot for each user</li>
+		<li>A database server : PostgreSQL with phpPgAdmin</li>
+		</ul>
+	However, I have some issues with Bind9, the Domain Name System server. Though my server is accessible from my local network using its IP address, nobody can access it from outside. 
+	</li>
+	<li>
+	<strong>Developping a bank accounts manager software :</strong> This is a project created with a friend of mine. I have to program this application in C++/Qt and make it able to work with an internet access to store the data in a database. Each user has a password saved in a file after being hashed with the SHA-1 algorithm. Data of each account is encrypted with AES  and saved on the user's computer and when it is possible data are sent online.
+	</li>
 </ul></p>
 
 

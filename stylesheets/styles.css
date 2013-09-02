@@ -863,10 +863,9 @@ nav ul li.tag-h2 a {
   font-weight: bold;
   color: #333;
 }
-nav ul li.tag-h3 + .tag-h2 {
-  font-size: 0.75em;
+nav ul li.tag-h3 {
+  font-size: 0.9em;
   padding-left: 1em;
-  margin-top: 10px;
 
 }
 nav ul a {

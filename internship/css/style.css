@@ -267,35 +267,35 @@ nav #next {
   width: 200px;
 }
 .active #python {
-  width: 250px;
+  width: 120px;
 }
 .active #go {
-  width: 100px;
+  width: 30px;
 }
 
 
 .active #java {
-  width: 250px;
+  width: 10px;
 }
 
 .active #php {
-  width: 190px;
-}
-
-.active #javascript {
-  width: 250px;
-}
-
-.active #sql {
   width: 150px;
 }
 
+.active #javascript {
+  width: 10px;
+}
+
+.active #sql {
+  width: 200px;
+}
+
 .active #html {
-  width: 250px;
+  width: 200px;
 }
 
 .active #css {
-  width: 200px;
+  width: 170px;
 }
 
 .active #jquery {
@@ -310,7 +310,7 @@ nav #next {
   width: 100px;
 }
 
-.active #wordpress {
+.active #Micro_Off_Suite {
   width: 250px;
 }
 
@@ -529,4 +529,10 @@ nav {
   float: right;
   letter-spacing: 20px;
   width: auto;
+}
+
+/*Customization*/
+
+.right {
+  float: right;
 }

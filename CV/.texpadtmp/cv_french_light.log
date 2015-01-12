@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.21)  13 NOV 2014 20:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.21)  4 NOV 2014 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**cv_french.tex
-(./cv_french.tex
+**cv_french_light.tex
+(./cv_french_light.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (./moderncv.cls
@@ -580,8 +580,8 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 18.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 18.
 
 (/Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github.io/CV/.texpadtmp
-/cv_french.aux)
-\openout1 = `cv_french.aux'.
+/cv_french_light.aux)
+\openout1 = `cv_french_light.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -602,8 +602,7 @@ LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 18.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+) (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen119
@@ -695,16 +694,16 @@ LaTeX Info: Redefining \pageref on input line 18.
 LaTeX Info: Redefining \nameref on input line 18.
 
 (/Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github.io/CV/.texpadtmp
-/cv_french.out)
+/cv_french_light.out)
 (/Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github.io/CV/.texpadtmp
-/cv_french.out)
+/cv_french_light.out)
 \@outlinefile=\write3
-\openout3 = `cv_french.out'.
+\openout3 = `cv_french_light.out'.
 
-\pagenumberwidth=\skip68
 \makecvtitledetailsbox=\box30
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 19.
- (/usr/local/texlive/2013/texmf-dist/tex/latex/lm/ot1lmr.fd
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 19.
@@ -735,8 +734,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
 \makecvtitlepicturebox=\box31
-\makecvtitledetailswidth=\skip69
-\makecvtitlepicturewidth=\skip70
+\makecvtitledetailswidth=\skip68
+\makecvtitlepicturewidth=\skip69
 
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
 
@@ -751,28 +750,27 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 26.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
 
 (/Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github.io/CV/.texpadtmp
-/cv_french.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
-Package rerunfilecheck Info: File `cv_french.out' has not changed.
+/cv_french_light.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+Package rerunfilecheck Info: File `cv_french_light.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 12188 strings out of 493315
- 177440 string characters out of 6137904
- 303632 words of memory out of 5000000
+ 12187 strings out of 493315
+ 177512 string characters out of 6137904
+ 302638 words of memory out of 5000000
  15427 multiletter control sequences out of 15000+600000
  60545 words of font info for 65 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,12n,67p,884b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,11n,67p,890b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2013/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2013/texmf-di
@@ -784,10 +782,10 @@ al/texlive/2013/texmf-dist/fonts/type1/public/lm/lmro17.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/lm/lmro9.pfb></usr/local/texlive/2013/texmf
 -dist/fonts/type1/public/marvosym/marvosym.pfb>
 Output written on /Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github
-.io/CV/.texpadtmp/cv_french.pdf (2 pages, 253276 bytes).
+.io/CV/.texpadtmp/cv_french_light.pdf (1 page, 252278 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
  20529 words of extra memory for PDF output out of 20736 (max. 10000000)
 

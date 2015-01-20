@@ -7,7 +7,7 @@ var myAppTranslate = angular.module('myAppTranslate', ['pascalprecht.translate',
 myAppTranslate.config(function($translateProvider) {
 	$translateProvider.registerAvailableLanguageKeys(['en','fr']);
 	$translateProvider.useStaticFilesLoader({
-  		prefix: '/app/lang/',
+  		prefix: '/lang/',
   		suffix: '.json'
 	}).
 	determinePreferredLanguage();

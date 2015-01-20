@@ -12,7 +12,10 @@
   font-weight: @btn-font-weight;
   text-align: center;
   vertical-align: middle;
+<<<<<<< HEAD
   touch-action: manipulation;
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
@@ -23,15 +26,23 @@
   &,
   &:active,
   &.active {
+<<<<<<< HEAD
     &:focus,
     &.focus {
+=======
+    &:focus {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       .tab-focus();
     }
   }
 
   &:hover,
+<<<<<<< HEAD
   &:focus,
   &.focus {
+=======
+  &:focus {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     color: @btn-default-color;
     text-decoration: none;
   }
@@ -46,7 +57,11 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
+<<<<<<< HEAD
     cursor: @cursor-disabled;
+=======
+    cursor: not-allowed;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     pointer-events: none; // Future-proof disabling of clicks
     .opacity(.65);
     .box-shadow(none);
@@ -88,11 +103,18 @@
 .btn-link {
   color: @link-color;
   font-weight: normal;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   border-radius: 0;
 
   &,
   &:active,
+<<<<<<< HEAD
   &.active,
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   &[disabled],
   fieldset[disabled] & {
     background-color: transparent;
@@ -143,6 +165,11 @@
 .btn-block {
   display: block;
   width: 100%;
+<<<<<<< HEAD
+=======
+  padding-left: 0;
+  padding-right: 0;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Vertically space out multiple block buttons

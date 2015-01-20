@@ -48,6 +48,10 @@
 // content for the user's viewport.
 
 .navbar-collapse {
+<<<<<<< HEAD
+=======
+  max-height: @navbar-collapse-max-height;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   overflow-x: visible;
   padding-right: @navbar-padding-horizontal;
   padding-left:  @navbar-padding-horizontal;
@@ -67,7 +71,10 @@
 
     &.collapse {
       display: block !important;
+<<<<<<< HEAD
       visibility: visible !important;
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       height: auto !important;
       padding-bottom: 0; // Override default setting
       overflow: visible !important;
@@ -88,6 +95,7 @@
   }
 }
 
+<<<<<<< HEAD
 .navbar-fixed-top,
 .navbar-fixed-bottom {
   .navbar-collapse {
@@ -99,6 +107,8 @@
   }
 }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 // Both navbar header and collapse
 //
@@ -173,10 +183,13 @@
     text-decoration: none;
   }
 
+<<<<<<< HEAD
   > img {
     display: block;
   }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   @media (min-width: @grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
@@ -205,7 +218,11 @@
   // We remove the `outline` here, but later compensate by attaching `:hover`
   // styles to `:focus`.
   &:focus {
+<<<<<<< HEAD
     outline: 0;
+=======
+    outline: none;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   // Bars
@@ -275,10 +292,32 @@
         padding-bottom: @navbar-padding-vertical;
       }
     }
+<<<<<<< HEAD
+=======
+
+    &.navbar-right:last-child {
+      margin-right: -@navbar-padding-horizontal;
+    }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 }
 
 
+<<<<<<< HEAD
+=======
+// Component alignment
+//
+// Repurpose the pull utilities as their own navbar utilities to avoid specificity
+// issues with parents and chaining. Only do this when the navbar is uncollapsed
+// though so that navbar contents properly stack and align in mobile.
+
+@media (min-width: @grid-float-breakpoint) {
+  .navbar-left  { .pull-left(); }
+  .navbar-right { .pull-right(); }
+}
+
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 // Navbar form
 //
 // Extension of the `.form-inline` with some extra flavor for optimum display in
@@ -299,10 +338,13 @@
   .form-group {
     @media (max-width: @grid-float-breakpoint-max) {
       margin-bottom: 5px;
+<<<<<<< HEAD
 
       &:last-child {
         margin-bottom: 0;
       }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     }
   }
 
@@ -318,6 +360,14 @@
     padding-top: 0;
     padding-bottom: 0;
     .box-shadow(none);
+<<<<<<< HEAD
+=======
+
+    // Outdent the form if last child to line up with content down the page
+    &.navbar-right:last-child {
+      margin-right: -@navbar-padding-horizontal;
+    }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 }
 
@@ -331,7 +381,10 @@
 }
 // Menu position and menu caret support for dropups via extra dropup class
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+<<<<<<< HEAD
   .border-top-radius(@navbar-border-radius);
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   .border-bottom-radius(0);
 }
 
@@ -363,6 +416,7 @@
     float: left;
     margin-left: @navbar-padding-horizontal;
     margin-right: @navbar-padding-horizontal;
+<<<<<<< HEAD
   }
 }
 
@@ -382,12 +436,20 @@
     margin-right: -@navbar-padding-horizontal;
 
     ~ .navbar-right {
+=======
+
+    // Outdent the form if last child to line up with content down the page
+    &.navbar-right:last-child {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       margin-right: 0;
     }
   }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 // Alternate navbars
 // --------------------------------------------------
 
@@ -508,6 +570,7 @@
     }
   }
 
+<<<<<<< HEAD
   .btn-link {
     color: @navbar-default-link-color;
     &:hover,
@@ -522,6 +585,8 @@
       }
     }
   }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Inverse navbar
@@ -643,6 +708,7 @@
     }
   }
 
+<<<<<<< HEAD
   .btn-link {
     color: @navbar-inverse-link-color;
     &:hover,
@@ -657,4 +723,6 @@
       }
     }
   }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }

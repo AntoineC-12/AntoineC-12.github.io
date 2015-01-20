@@ -7,6 +7,10 @@
 @import "mixins.less";
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Buttons
 // --------------------------------------------------
@@ -27,10 +31,13 @@
   &.active {
     .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
   }
+<<<<<<< HEAD
 
   .badge {
     text-shadow: none;
   }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Mixin for generating new styles
@@ -51,12 +58,15 @@
     background-color: darken(@btn-color, 12%);
     border-color: darken(@btn-color, 14%);
   }
+<<<<<<< HEAD
 
   &:disabled,
   &[disabled] {
     background-color: darken(@btn-color, 12%);
     background-image: none;
   }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Common styles
@@ -77,6 +87,10 @@
 .btn-danger  { .btn-styles(@btn-danger-bg); }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Images
 // --------------------------------------------------
@@ -87,6 +101,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Dropdowns
 // --------------------------------------------------
@@ -104,6 +122,10 @@
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Navbar
 // --------------------------------------------------
@@ -116,9 +138,14 @@
   @shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 5px rgba(0,0,0,.075);
   .box-shadow(@shadow);
 
+<<<<<<< HEAD
   .navbar-nav > .open > a,
   .navbar-nav > .active > a {
     #gradient > .vertical(@start-color: darken(@navbar-default-link-active-bg, 5%); @end-color: darken(@navbar-default-link-active-bg, 2%));
+=======
+  .navbar-nav > .active > a {
+    #gradient > .vertical(@start-color: darken(@navbar-default-bg, 5%); @end-color: darken(@navbar-default-bg, 2%));
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     .box-shadow(inset 0 3px 9px rgba(0,0,0,.075));
   }
 }
@@ -132,9 +159,14 @@
   #gradient > .vertical(@start-color: lighten(@navbar-inverse-bg, 10%); @end-color: @navbar-inverse-bg);
   .reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
 
+<<<<<<< HEAD
   .navbar-nav > .open > a,
   .navbar-nav > .active > a {
     #gradient > .vertical(@start-color: @navbar-inverse-link-active-bg; @end-color: lighten(@navbar-inverse-link-active-bg, 2.5%));
+=======
+  .navbar-nav > .active > a {
+    #gradient > .vertical(@start-color: @navbar-inverse-bg; @end-color: lighten(@navbar-inverse-bg, 2.5%));
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     .box-shadow(inset 0 3px 9px rgba(0,0,0,.25));
   }
 
@@ -151,6 +183,7 @@
   border-radius: 0;
 }
 
+<<<<<<< HEAD
 // Fix active state of dropdown items in collapsed mode
 @media (max-width: @grid-float-breakpoint-max) {
   .navbar .navbar-nav .open .dropdown-menu > .active > a {
@@ -162,6 +195,8 @@
     }
   }
 }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 
 //
@@ -188,6 +223,10 @@
 .alert-danger     { .alert-styles(@alert-danger-bg); }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Progress bars
 // --------------------------------------------------
@@ -209,11 +248,14 @@
 .progress-bar-warning    { .progress-bar-styles(@progress-bar-warning-bg); }
 .progress-bar-danger     { .progress-bar-styles(@progress-bar-danger-bg); }
 
+<<<<<<< HEAD
 // Reset the striped class because our mixins don't do multiple gradients and
 // the above custom styles override the new `.progress-bar-striped` in v3.2.0.
 .progress-bar-striped {
   #gradient > .striped();
 }
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 
 //
@@ -230,6 +272,7 @@
   text-shadow: 0 -1px 0 darken(@list-group-active-bg, 10%);
   #gradient > .vertical(@start-color: @list-group-active-bg; @end-color: darken(@list-group-active-bg, 7.5%));
   border-color: darken(@list-group-active-border, 7.5%);
+<<<<<<< HEAD
 
   .badge {
     text-shadow: none;
@@ -237,6 +280,12 @@
 }
 
 
+=======
+}
+
+
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Panels
 // --------------------------------------------------
@@ -260,6 +309,10 @@
 .panel-danger > .panel-heading    { .panel-heading-styles(@panel-danger-heading-bg); }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //
 // Wells
 // --------------------------------------------------

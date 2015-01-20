@@ -1,5 +1,9 @@
 /* ========================================================================
+<<<<<<< HEAD
  * Bootstrap: modal.js v3.3.1
+=======
+ * Bootstrap: modal.js v3.1.1
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
  * http://getbootstrap.com/javascript/#modals
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
@@ -14,12 +18,19 @@
   // ======================
 
   var Modal = function (element, options) {
+<<<<<<< HEAD
     this.options        = options
     this.$body          = $(document.body)
     this.$element       = $(element)
     this.$backdrop      =
     this.isShown        = null
     this.scrollbarWidth = 0
+=======
+    this.options   = options
+    this.$element  = $(element)
+    this.$backdrop =
+    this.isShown   = null
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     if (this.options.remote) {
       this.$element
@@ -30,11 +41,14 @@
     }
   }
 
+<<<<<<< HEAD
   Modal.VERSION  = '3.3.1'
 
   Modal.TRANSITION_DURATION = 300
   Modal.BACKDROP_TRANSITION_DURATION = 150
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   Modal.DEFAULTS = {
     backdrop: true,
     keyboard: true,
@@ -42,7 +56,11 @@
   }
 
   Modal.prototype.toggle = function (_relatedTarget) {
+<<<<<<< HEAD
     return this.isShown ? this.hide() : this.show(_relatedTarget)
+=======
+    return this[!this.isShown ? 'show' : 'hide'](_relatedTarget)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   Modal.prototype.show = function (_relatedTarget) {
@@ -55,12 +73,16 @@
 
     this.isShown = true
 
+<<<<<<< HEAD
     this.checkScrollbar()
     this.setScrollbar()
     this.$body.addClass('modal-open')
 
     this.escape()
     this.resize()
+=======
+    this.escape()
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     this.$element.on('click.dismiss.bs.modal', '[data-dismiss="modal"]', $.proxy(this.hide, this))
 
@@ -68,16 +90,23 @@
       var transition = $.support.transition && that.$element.hasClass('fade')
 
       if (!that.$element.parent().length) {
+<<<<<<< HEAD
         that.$element.appendTo(that.$body) // don't move modals dom position
+=======
+        that.$element.appendTo(document.body) // don't move modals dom position
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       }
 
       that.$element
         .show()
         .scrollTop(0)
 
+<<<<<<< HEAD
       if (that.options.backdrop) that.adjustBackdrop()
       that.adjustDialog()
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       if (transition) {
         that.$element[0].offsetWidth // force reflow
       }
@@ -92,11 +121,19 @@
 
       transition ?
         that.$element.find('.modal-dialog') // wait for modal to slide in
+<<<<<<< HEAD
           .one('bsTransitionEnd', function () {
             that.$element.trigger('focus').trigger(e)
           })
           .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
         that.$element.trigger('focus').trigger(e)
+=======
+          .one($.support.transition.end, function () {
+            that.$element.focus().trigger(e)
+          })
+          .emulateTransitionEnd(300) :
+        that.$element.focus().trigger(e)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     })
   }
 
@@ -112,7 +149,10 @@
     this.isShown = false
 
     this.escape()
+<<<<<<< HEAD
     this.resize()
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     $(document).off('focusin.bs.modal')
 
@@ -123,8 +163,13 @@
 
     $.support.transition && this.$element.hasClass('fade') ?
       this.$element
+<<<<<<< HEAD
         .one('bsTransitionEnd', $.proxy(this.hideModal, this))
         .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
+=======
+        .one($.support.transition.end, $.proxy(this.hideModal, this))
+        .emulateTransitionEnd(300) :
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       this.hideModal()
   }
 
@@ -133,13 +178,18 @@
       .off('focusin.bs.modal') // guard against infinite focus loop
       .on('focusin.bs.modal', $.proxy(function (e) {
         if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
+<<<<<<< HEAD
           this.$element.trigger('focus')
+=======
+          this.$element.focus()
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
         }
       }, this))
   }
 
   Modal.prototype.escape = function () {
     if (this.isShown && this.options.keyboard) {
+<<<<<<< HEAD
       this.$element.on('keydown.dismiss.bs.modal', $.proxy(function (e) {
         e.which == 27 && this.hide()
       }, this))
@@ -153,6 +203,13 @@
       $(window).on('resize.bs.modal', $.proxy(this.handleUpdate, this))
     } else {
       $(window).off('resize.bs.modal')
+=======
+      this.$element.on('keyup.dismiss.bs.modal', $.proxy(function (e) {
+        e.which == 27 && this.hide()
+      }, this))
+    } else if (!this.isShown) {
+      this.$element.off('keyup.dismiss.bs.modal')
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     }
   }
 
@@ -160,9 +217,13 @@
     var that = this
     this.$element.hide()
     this.backdrop(function () {
+<<<<<<< HEAD
       that.$body.removeClass('modal-open')
       that.resetAdjustments()
       that.resetScrollbar()
+=======
+      that.removeBackdrop()
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       that.$element.trigger('hidden.bs.modal')
     })
   }
@@ -173,13 +234,17 @@
   }
 
   Modal.prototype.backdrop = function (callback) {
+<<<<<<< HEAD
     var that = this
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     var animate = this.$element.hasClass('fade') ? 'fade' : ''
 
     if (this.isShown && this.options.backdrop) {
       var doAnimate = $.support.transition && animate
 
       this.$backdrop = $('<div class="modal-backdrop ' + animate + '" />')
+<<<<<<< HEAD
         .prependTo(this.$element)
         .on('click.dismiss.bs.modal', $.proxy(function (e) {
           if (e.target !== e.currentTarget) return
@@ -187,6 +252,16 @@
             ? this.$element[0].focus.call(this.$element[0])
             : this.hide.call(this)
         }, this))
+=======
+        .appendTo(document.body)
+
+      this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
+        if (e.target !== e.currentTarget) return
+        this.options.backdrop == 'static'
+          ? this.$element[0].focus.call(this.$element[0])
+          : this.hide.call(this)
+      }, this))
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
       if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
 
@@ -196,13 +271,19 @@
 
       doAnimate ?
         this.$backdrop
+<<<<<<< HEAD
           .one('bsTransitionEnd', callback)
           .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
+=======
+          .one($.support.transition.end, callback)
+          .emulateTransitionEnd(150) :
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
         callback()
 
     } else if (!this.isShown && this.$backdrop) {
       this.$backdrop.removeClass('in')
 
+<<<<<<< HEAD
       var callbackRemove = function () {
         that.removeBackdrop()
         callback && callback()
@@ -212,12 +293,20 @@
           .one('bsTransitionEnd', callbackRemove)
           .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
         callbackRemove()
+=======
+      $.support.transition && this.$element.hasClass('fade') ?
+        this.$backdrop
+          .one($.support.transition.end, callback)
+          .emulateTransitionEnd(150) :
+        callback()
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     } else if (callback) {
       callback()
     }
   }
 
+<<<<<<< HEAD
   // these following methods are used to handle overflowing modals
 
   Modal.prototype.handleUpdate = function () {
@@ -270,11 +359,19 @@
     return scrollbarWidth
   }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
   // MODAL PLUGIN DEFINITION
   // =======================
 
+<<<<<<< HEAD
   function Plugin(option, _relatedTarget) {
+=======
+  var old = $.fn.modal
+
+  $.fn.modal = function (option, _relatedTarget) {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     return this.each(function () {
       var $this   = $(this)
       var data    = $this.data('bs.modal')
@@ -286,9 +383,12 @@
     })
   }
 
+<<<<<<< HEAD
   var old = $.fn.modal
 
   $.fn.modal             = Plugin
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   $.fn.modal.Constructor = Modal
 
 
@@ -307,11 +407,16 @@
   $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
     var $this   = $(this)
     var href    = $this.attr('href')
+<<<<<<< HEAD
     var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
+=======
+    var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) //strip for ie7
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     var option  = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
 
     if ($this.is('a')) e.preventDefault()
 
+<<<<<<< HEAD
     $target.one('show.bs.modal', function (showEvent) {
       if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
       $target.one('hidden.bs.modal', function () {
@@ -321,4 +426,17 @@
     Plugin.call($target, option, this)
   })
 
+=======
+    $target
+      .modal(option, this)
+      .one('hide', function () {
+        $this.is(':visible') && $this.focus()
+      })
+  })
+
+  $(document)
+    .on('show.bs.modal', '.modal', function () { $(document.body).addClass('modal-open') })
+    .on('hidden.bs.modal', '.modal', function () { $(document.body).removeClass('modal-open') })
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }(jQuery);

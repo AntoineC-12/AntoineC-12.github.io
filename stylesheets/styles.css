@@ -704,10 +704,13 @@ header p {
   margin: 0px;
 }
 
+<<<<<<< HEAD
 #lang {
   display: none;
 }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 #banner {
   z-index: 100;
   left: 0;
@@ -768,11 +771,14 @@ header p {
   background: linear-gradient(#ffe788, #ffe788);
   background-color: #ffeca0;
 }
+<<<<<<< HEAD
 
 #banner .lang {
    font-weight: normal;
 }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 #banner .fork {
   position: fixed;
   left: 50%;
@@ -894,7 +900,11 @@ footer {
   line-height: 16px;
 }
 
+<<<<<<< HEAD
 @media print, screen and (max-width: 1070px) {
+=======
+@media print, screen and (max-width: 1060px) {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   div.wrapper {
     width: auto;
     margin: 0;
@@ -915,11 +925,14 @@ footer {
     -ms-text-overflow: ellipsis;
   }
 
+<<<<<<< HEAD
   #banner .lang {
     left: 45%;
     position: fixed;
   }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   #banner {
     width: 100%;
   }
@@ -1008,6 +1021,7 @@ footer {
     margin-top: 5px;
   }
 
+<<<<<<< HEAD
   #lang {
     display: inline-block;
     z-index: 100;
@@ -1027,6 +1041,8 @@ footer {
     margin-right: 4px;
   }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   #banner {
     display: none;
   }
@@ -1067,6 +1083,7 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -1837,6 +1854,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   clear: both;
 }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 /*  Pour la différenciation des blocs */
 /*
 #banner{

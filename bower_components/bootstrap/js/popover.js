@@ -1,5 +1,9 @@
 /* ========================================================================
+<<<<<<< HEAD
  * Bootstrap: popover.js v3.3.1
+=======
+ * Bootstrap: popover.js v3.1.1
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
  * http://getbootstrap.com/javascript/#popovers
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
@@ -19,13 +23,20 @@
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
 
+<<<<<<< HEAD
   Popover.VERSION  = '3.3.1'
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
     trigger: 'click',
     content: '',
+<<<<<<< HEAD
     template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+=======
+    template: '<div class="popover"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   })
 
 
@@ -46,7 +57,11 @@
     var content = this.getContent()
 
     $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
+<<<<<<< HEAD
     $tip.find('.popover-content').children().detach().end()[ // we use append for html objects to maintain js events
+=======
+    $tip.find('.popover-content')[ // we use append for html objects to maintain js events
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       this.options.html ? (typeof content == 'string' ? 'html' : 'append') : 'text'
     ](content)
 
@@ -72,7 +87,11 @@
   }
 
   Popover.prototype.arrow = function () {
+<<<<<<< HEAD
     return (this.$arrow = this.$arrow || this.tip().find('.arrow'))
+=======
+    return this.$arrow = this.$arrow || this.tip().find('.arrow')
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   Popover.prototype.tip = function () {
@@ -84,6 +103,7 @@
   // POPOVER PLUGIN DEFINITION
   // =========================
 
+<<<<<<< HEAD
   function Plugin(option) {
     return this.each(function () {
       var $this    = $(this)
@@ -98,13 +118,28 @@
       } else {
         if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
       }
+=======
+  var old = $.fn.popover
+
+  $.fn.popover = function (option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.popover')
+      var options = typeof option == 'object' && option
+
+      if (!data && option == 'destroy') return
+      if (!data) $this.data('bs.popover', (data = new Popover(this, options)))
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       if (typeof option == 'string') data[option]()
     })
   }
 
+<<<<<<< HEAD
   var old = $.fn.popover
 
   $.fn.popover             = Plugin
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   $.fn.popover.Constructor = Popover
 
 

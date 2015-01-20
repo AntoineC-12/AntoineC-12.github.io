@@ -35,6 +35,17 @@
     margin-bottom: 0;
     .border-bottom-radius(@list-group-border-radius);
   }
+<<<<<<< HEAD
+=======
+
+  // Align badges within list items
+  > .badge {
+    float: right;
+  }
+  > .badge + .badge {
+    margin-right: 5px;
+  }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 
@@ -54,6 +65,7 @@ a.list-group-item {
   &:hover,
   &:focus {
     text-decoration: none;
+<<<<<<< HEAD
     color: @list-group-link-hover-color;
     background-color: @list-group-hover-bg;
   }
@@ -76,6 +88,10 @@ a.list-group-item {
       color: @list-group-disabled-text-color;
     }
   }
+=======
+    background-color: @list-group-hover-bg;
+  }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
   // Active class on item itself, not parent
   &.active,
@@ -87,9 +103,13 @@ a.list-group-item {
     border-color: @list-group-active-border;
 
     // Force color to inherit for custom content
+<<<<<<< HEAD
     .list-group-item-heading,
     .list-group-item-heading > small,
     .list-group-item-heading > .small {
+=======
+    .list-group-item-heading {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       color: inherit;
     }
     .list-group-item-text {

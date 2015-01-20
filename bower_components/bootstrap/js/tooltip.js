@@ -1,5 +1,9 @@
 /* ========================================================================
+<<<<<<< HEAD
  * Bootstrap: tooltip.js v3.3.1
+=======
+ * Bootstrap: tooltip.js v3.1.1
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
  * http://getbootstrap.com/javascript/#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ========================================================================
@@ -25,19 +29,27 @@
     this.init('tooltip', element, options)
   }
 
+<<<<<<< HEAD
   Tooltip.VERSION  = '3.3.1'
 
   Tooltip.TRANSITION_DURATION = 150
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   Tooltip.DEFAULTS = {
     animation: true,
     placement: 'top',
     selector: false,
+<<<<<<< HEAD
     template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+=======
+    template: '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     trigger: 'hover focus',
     title: '',
     delay: 0,
     html: false,
+<<<<<<< HEAD
     container: false,
     viewport: {
       selector: 'body',
@@ -51,6 +63,16 @@
     this.$element  = $(element)
     this.options   = this.getOptions(options)
     this.$viewport = this.options.viewport && $(this.options.viewport.selector || this.options.viewport)
+=======
+    container: false
+  }
+
+  Tooltip.prototype.init = function (type, element, options) {
+    this.enabled  = true
+    this.type     = type
+    this.$element = $(element)
+    this.options  = this.getOptions(options)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     var triggers = this.options.trigger.split(' ')
 
@@ -103,6 +125,7 @@
 
   Tooltip.prototype.enter = function (obj) {
     var self = obj instanceof this.constructor ?
+<<<<<<< HEAD
       obj : $(obj.currentTarget).data('bs.' + this.type)
 
     if (self && self.$tip && self.$tip.is(':visible')) {
@@ -114,6 +137,9 @@
       self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
       $(obj.currentTarget).data('bs.' + this.type, self)
     }
+=======
+      obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     clearTimeout(self.timeout)
 
@@ -128,12 +154,16 @@
 
   Tooltip.prototype.leave = function (obj) {
     var self = obj instanceof this.constructor ?
+<<<<<<< HEAD
       obj : $(obj.currentTarget).data('bs.' + this.type)
 
     if (!self) {
       self = new this.constructor(obj.currentTarget, this.getDelegateOptions())
       $(obj.currentTarget).data('bs.' + this.type, self)
     }
+=======
+      obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
     clearTimeout(self.timeout)
 
@@ -152,6 +182,7 @@
     if (this.hasContent() && this.enabled) {
       this.$element.trigger(e)
 
+<<<<<<< HEAD
       var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0])
       if (e.isDefaultPrevented() || !inDom) return
       var that = this
@@ -163,6 +194,14 @@
       this.setContent()
       $tip.attr('id', tipId)
       this.$element.attr('aria-describedby', tipId)
+=======
+      if (e.isDefaultPrevented()) return
+      var that = this;
+
+      var $tip = this.tip()
+
+      this.setContent()
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
       if (this.options.animation) $tip.addClass('fade')
 
@@ -178,7 +217,10 @@
         .detach()
         .css({ top: 0, left: 0, display: 'block' })
         .addClass(placement)
+<<<<<<< HEAD
         .data('bs.' + this.type, this)
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
       this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element)
 
@@ -187,6 +229,7 @@
       var actualHeight = $tip[0].offsetHeight
 
       if (autoPlace) {
+<<<<<<< HEAD
         var orgPlacement = placement
         var $container   = this.options.container ? $(this.options.container) : this.$element.parent()
         var containerDim = this.getPosition($container)
@@ -195,6 +238,20 @@
                     placement == 'top'    && pos.top    - actualHeight < containerDim.top    ? 'bottom' :
                     placement == 'right'  && pos.right  + actualWidth  > containerDim.width  ? 'left'   :
                     placement == 'left'   && pos.left   - actualWidth  < containerDim.left   ? 'right'  :
+=======
+        var $parent = this.$element.parent()
+
+        var orgPlacement = placement
+        var docScroll    = document.documentElement.scrollTop || document.body.scrollTop
+        var parentWidth  = this.options.container == 'body' ? window.innerWidth  : $parent.outerWidth()
+        var parentHeight = this.options.container == 'body' ? window.innerHeight : $parent.outerHeight()
+        var parentLeft   = this.options.container == 'body' ? 0 : $parent.offset().left
+
+        placement = placement == 'bottom' && pos.top   + pos.height  + actualHeight - docScroll > parentHeight  ? 'top'    :
+                    placement == 'top'    && pos.top   - docScroll   - actualHeight < 0                         ? 'bottom' :
+                    placement == 'right'  && pos.right + actualWidth > parentWidth                              ? 'left'   :
+                    placement == 'left'   && pos.left  - actualWidth < parentLeft                               ? 'right'  :
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
                     placement
 
         $tip
@@ -205,6 +262,7 @@
       var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight)
 
       this.applyPlacement(calculatedOffset, placement)
+<<<<<<< HEAD
 
       var complete = function () {
         var prevHoverState = that.hoverState
@@ -212,17 +270,32 @@
         that.hoverState = null
 
         if (prevHoverState == 'out') that.leave(that)
+=======
+      this.hoverState = null
+
+      var complete = function() {
+        that.$element.trigger('shown.bs.' + that.type)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       }
 
       $.support.transition && this.$tip.hasClass('fade') ?
         $tip
+<<<<<<< HEAD
           .one('bsTransitionEnd', complete)
           .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+=======
+          .one($.support.transition.end, complete)
+          .emulateTransitionEnd(150) :
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
         complete()
     }
   }
 
   Tooltip.prototype.applyPlacement = function (offset, placement) {
+<<<<<<< HEAD
+=======
+    var replace
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     var $tip   = this.tip()
     var width  = $tip[0].offsetWidth
     var height = $tip[0].offsetHeight
@@ -256,6 +329,7 @@
     var actualHeight = $tip[0].offsetHeight
 
     if (placement == 'top' && actualHeight != height) {
+<<<<<<< HEAD
       offset.top = offset.top + height - actualHeight
     }
 
@@ -276,6 +350,35 @@
     this.arrow()
       .css(isHorizontal ? 'left' : 'top', 50 * (1 - delta / dimension) + '%')
       .css(isHorizontal ? 'top' : 'left', '')
+=======
+      replace = true
+      offset.top = offset.top + height - actualHeight
+    }
+
+    if (/bottom|top/.test(placement)) {
+      var delta = 0
+
+      if (offset.left < 0) {
+        delta       = offset.left * -2
+        offset.left = 0
+
+        $tip.offset(offset)
+
+        actualWidth  = $tip[0].offsetWidth
+        actualHeight = $tip[0].offsetHeight
+      }
+
+      this.replaceArrow(delta - width + actualWidth, actualWidth, 'left')
+    } else {
+      this.replaceArrow(actualHeight - height, actualHeight, 'top')
+    }
+
+    if (replace) $tip.offset(offset)
+  }
+
+  Tooltip.prototype.replaceArrow = function (delta, dimension, position) {
+    this.arrow().css(position, delta ? (50 * (1 - delta / dimension) + '%') : '')
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   Tooltip.prototype.setContent = function () {
@@ -286,17 +389,25 @@
     $tip.removeClass('fade in top bottom left right')
   }
 
+<<<<<<< HEAD
   Tooltip.prototype.hide = function (callback) {
+=======
+  Tooltip.prototype.hide = function () {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     var that = this
     var $tip = this.tip()
     var e    = $.Event('hide.bs.' + this.type)
 
     function complete() {
       if (that.hoverState != 'in') $tip.detach()
+<<<<<<< HEAD
       that.$element
         .removeAttr('aria-describedby')
         .trigger('hidden.bs.' + that.type)
       callback && callback()
+=======
+      that.$element.trigger('hidden.bs.' + that.type)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     }
 
     this.$element.trigger(e)
@@ -307,8 +418,13 @@
 
     $.support.transition && this.$tip.hasClass('fade') ?
       $tip
+<<<<<<< HEAD
         .one('bsTransitionEnd', complete)
         .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
+=======
+        .one($.support.transition.end, complete)
+        .emulateTransitionEnd(150) :
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       complete()
 
     this.hoverState = null
@@ -318,7 +434,11 @@
 
   Tooltip.prototype.fixTitle = function () {
     var $e = this.$element
+<<<<<<< HEAD
     if ($e.attr('title') || typeof ($e.attr('data-original-title')) != 'string') {
+=======
+    if ($e.attr('title') || typeof($e.attr('data-original-title')) != 'string') {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       $e.attr('data-original-title', $e.attr('title') || '').attr('title', '')
     }
   }
@@ -327,6 +447,7 @@
     return this.getTitle()
   }
 
+<<<<<<< HEAD
   Tooltip.prototype.getPosition = function ($element) {
     $element   = $element || this.$element
 
@@ -343,6 +464,14 @@
     var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null
 
     return $.extend({}, elRect, scroll, outerDims, elOffset)
+=======
+  Tooltip.prototype.getPosition = function () {
+    var el = this.$element[0]
+    return $.extend({}, (typeof el.getBoundingClientRect == 'function') ? el.getBoundingClientRect() : {
+      width: el.offsetWidth,
+      height: el.offsetHeight
+    }, this.$element.offset())
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
@@ -350,6 +479,7 @@
            placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2  } :
            placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
         /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width   }
+<<<<<<< HEAD
 
   }
 
@@ -379,6 +509,8 @@
     }
 
     return delta
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   Tooltip.prototype.getTitle = function () {
@@ -392,6 +524,7 @@
     return title
   }
 
+<<<<<<< HEAD
   Tooltip.prototype.getUID = function (prefix) {
     do prefix += ~~(Math.random() * 1000000)
     while (document.getElementById(prefix))
@@ -404,6 +537,22 @@
 
   Tooltip.prototype.arrow = function () {
     return (this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow'))
+=======
+  Tooltip.prototype.tip = function () {
+    return this.$tip = this.$tip || $(this.options.template)
+  }
+
+  Tooltip.prototype.arrow = function () {
+    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow')
+  }
+
+  Tooltip.prototype.validate = function () {
+    if (!this.$element[0].parentNode) {
+      this.hide()
+      this.$element = null
+      this.options  = null
+    }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
   Tooltip.prototype.enable = function () {
@@ -419,6 +568,7 @@
   }
 
   Tooltip.prototype.toggle = function (e) {
+<<<<<<< HEAD
     var self = this
     if (e) {
       self = $(e.currentTarget).data('bs.' + this.type)
@@ -428,21 +578,30 @@
       }
     }
 
+=======
+    var self = e ? $(e.currentTarget)[this.type](this.getDelegateOptions()).data('bs.' + this.type) : this
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     self.tip().hasClass('in') ? self.leave(self) : self.enter(self)
   }
 
   Tooltip.prototype.destroy = function () {
+<<<<<<< HEAD
     var that = this
     clearTimeout(this.timeout)
     this.hide(function () {
       that.$element.off('.' + that.type).removeData('bs.' + that.type)
     })
+=======
+    clearTimeout(this.timeout)
+    this.hide().$element.off('.' + this.type).removeData('bs.' + this.type)
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 
 
   // TOOLTIP PLUGIN DEFINITION
   // =========================
 
+<<<<<<< HEAD
   function Plugin(option) {
     return this.each(function () {
       var $this    = $(this)
@@ -457,13 +616,28 @@
       } else {
         if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
       }
+=======
+  var old = $.fn.tooltip
+
+  $.fn.tooltip = function (option) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.tooltip')
+      var options = typeof option == 'object' && option
+
+      if (!data && option == 'destroy') return
+      if (!data) $this.data('bs.tooltip', (data = new Tooltip(this, options)))
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       if (typeof option == 'string') data[option]()
     })
   }
 
+<<<<<<< HEAD
   var old = $.fn.tooltip
 
   $.fn.tooltip             = Plugin
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   $.fn.tooltip.Constructor = Tooltip
 
 

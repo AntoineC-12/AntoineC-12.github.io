@@ -20,7 +20,11 @@
 
 // Optional heading
 .panel-heading {
+<<<<<<< HEAD
   padding: @panel-heading-padding;
+=======
+  padding: 10px 15px;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   border-bottom: 1px solid transparent;
   .border-top-radius((@panel-border-radius - 1));
 
@@ -43,7 +47,11 @@
 
 // Optional footer (stays gray in every modifier class)
 .panel-footer {
+<<<<<<< HEAD
   padding: @panel-footer-padding;
+=======
+  padding: 10px 15px;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   background-color: @panel-footer-bg;
   border-top: 1px solid @panel-inner-border;
   .border-bottom-radius((@panel-border-radius - 1));
@@ -56,8 +64,12 @@
 // any kind of custom content between the two.
 
 .panel {
+<<<<<<< HEAD
   > .list-group,
   > .panel-collapse > .list-group {
+=======
+  > .list-group {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     margin-bottom: 0;
 
     .list-group-item {
@@ -87,9 +99,13 @@
     border-top-width: 0;
   }
 }
+<<<<<<< HEAD
 .list-group + .panel-footer {
   border-top-width: 0;
 }
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 // Tables in panels
 //
@@ -98,6 +114,7 @@
 
 .panel {
   > .table,
+<<<<<<< HEAD
   > .table-responsive > .table,
   > .panel-collapse > .table {
     margin-bottom: 0;
@@ -106,6 +123,10 @@
       padding-left: @panel-body-padding;
       padding-right: @panel-body-padding;
     }
+=======
+  > .table-responsive > .table {
+    margin-bottom: 0;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
   // Add border top radius for first one
   > .table:first-child,
@@ -115,9 +136,12 @@
     > thead:first-child,
     > tbody:first-child {
       > tr:first-child {
+<<<<<<< HEAD
         border-top-left-radius: (@panel-border-radius - 1);
         border-top-right-radius: (@panel-border-radius - 1);
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
         td:first-child,
         th:first-child {
           border-top-left-radius: (@panel-border-radius - 1);
@@ -137,9 +161,12 @@
     > tbody:last-child,
     > tfoot:last-child {
       > tr:last-child {
+<<<<<<< HEAD
         border-bottom-left-radius: (@panel-border-radius - 1);
         border-bottom-right-radius: (@panel-border-radius - 1);
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
         td:first-child,
         th:first-child {
           border-bottom-left-radius: (@panel-border-radius - 1);
@@ -152,9 +179,13 @@
     }
   }
   > .panel-body + .table,
+<<<<<<< HEAD
   > .panel-body + .table-responsive,
   > .table + .panel-body,
   > .table-responsive + .panel-body {
+=======
+  > .panel-body + .table-responsive {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     border-top: 1px solid @table-border-color;
   }
   > .table > tbody:first-child > tr:first-child th,
@@ -216,7 +247,11 @@
   .panel {
     margin-bottom: 0;
     border-radius: @panel-border-radius;
+<<<<<<< HEAD
 
+=======
+    overflow: hidden; // crop contents when collapsed
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     + .panel {
       margin-top: 5px;
     }
@@ -224,6 +259,7 @@
 
   .panel-heading {
     border-bottom: 0;
+<<<<<<< HEAD
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
@@ -231,6 +267,12 @@
     }
   }
 
+=======
+    + .panel-collapse .panel-body {
+      border-top: 1px solid @panel-inner-border;
+    }
+  }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   .panel-footer {
     border-top: 0;
     + .panel-collapse .panel-body {

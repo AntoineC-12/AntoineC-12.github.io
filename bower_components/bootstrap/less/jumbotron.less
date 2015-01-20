@@ -4,7 +4,11 @@
 
 
 .jumbotron {
+<<<<<<< HEAD
   padding: @jumbotron-padding (@jumbotron-padding / 2);
+=======
+  padding: @jumbotron-padding;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   margin-bottom: @jumbotron-padding;
   color: @jumbotron-color;
   background-color: @jumbotron-bg;
@@ -19,12 +23,16 @@
     font-weight: 200;
   }
 
+<<<<<<< HEAD
   > hr {
     border-top-color: darken(@jumbotron-bg, 10%);
   }
 
   .container &,
   .container-fluid & {
+=======
+  .container & {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
   }
 
@@ -33,10 +41,17 @@
   }
 
   @media screen and (min-width: @screen-sm-min) {
+<<<<<<< HEAD
     padding: (@jumbotron-padding * 1.6) 0;
 
     .container &,
     .container-fluid & {
+=======
+    padding-top:    (@jumbotron-padding * 1.6);
+    padding-bottom: (@jumbotron-padding * 1.6);
+
+    .container & {
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       padding-left:  (@jumbotron-padding * 2);
       padding-right: (@jumbotron-padding * 2);
     }

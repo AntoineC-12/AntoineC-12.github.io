@@ -11,7 +11,11 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0;
+<<<<<<< HEAD
   // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
+=======
+  // Chrome and Firefox set a `min-width: -webkit-min-content;` on fieldsets,
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   // so we reset that to ensure it behaves more like a standard block element.
   // See https://github.com/twbs/bootstrap/issues/12359.
   min-width: 0;
@@ -31,7 +35,10 @@ legend {
 
 label {
   display: inline-block;
+<<<<<<< HEAD
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -52,7 +59,11 @@ input[type="search"] {
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
+<<<<<<< HEAD
   margin-top: 1px \9; // IE8-9
+=======
+  margin-top: 1px \9; /* IE8-9 */
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   line-height: normal;
 }
 
@@ -141,7 +152,11 @@ output {
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
+<<<<<<< HEAD
     cursor: @cursor-disabled;
+=======
+    cursor: not-allowed;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     background-color: @input-bg-disabled;
     opacity: 1; // iOS fix for unreadable disabled content
   }
@@ -165,6 +180,7 @@ input[type="search"] {
 }
 
 
+<<<<<<< HEAD
 // Special styles for iOS temporal inputs
 //
 // In Mobile Safari, setting `display: block` on temporal inputs causes the
@@ -191,6 +207,15 @@ input[type="search"] {
   input[type="month"].input-lg {
     line-height: @input-height-large;
   }
+=======
+// Special styles for iOS date input
+//
+// In Mobile Safari, date inputs require a pixel line-height that matches the
+// given height of the input.
+
+input[type="date"] {
+  line-height: @input-height-base;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 
@@ -210,6 +235,7 @@ input[type="search"] {
 
 .radio,
 .checkbox {
+<<<<<<< HEAD
   position: relative;
   display: block;
   margin-top: 10px;
@@ -219,6 +245,15 @@ input[type="search"] {
     min-height: @line-height-computed; // Ensure the input doesn't jump when there is no text
     padding-left: 20px;
     margin-bottom: 0;
+=======
+  display: block;
+  min-height: @line-height-computed; // clear the floating input if there is no label text
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  label {
+    display: inline;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     font-weight: normal;
     cursor: pointer;
   }
@@ -227,11 +262,17 @@ input[type="search"] {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
+<<<<<<< HEAD
   position: absolute;
   margin-left: -20px;
   margin-top: 4px \9;
 }
 
+=======
+  float: left;
+  margin-left: -20px;
+}
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
@@ -254,6 +295,7 @@ input[type="search"] {
 }
 
 // Apply same disabled cursor tweak as for inputs
+<<<<<<< HEAD
 // Some special care is needed because <label>s don't inherit their parent's `cursor`.
 //
 // Note: Neither radios nor checkboxes can be readonly.
@@ -301,6 +343,19 @@ input[type="checkbox"] {
   &.input-sm {
     padding-left: 0;
     padding-right: 0;
+=======
+//
+// Note: Neither radios nor checkboxes can be readonly.
+input[type="radio"],
+input[type="checkbox"],
+.radio,
+.radio-inline,
+.checkbox,
+.checkbox-inline {
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }
 }
 
@@ -310,6 +365,7 @@ input[type="checkbox"] {
 // Build on `.form-control` with modifier classes to decrease or increase the
 // height and font-size of form controls.
 
+<<<<<<< HEAD
 .input-sm,
 .form-group-sm .form-control {
   .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @input-border-radius-small);
@@ -318,6 +374,14 @@ input[type="checkbox"] {
 .input-lg,
 .form-group-lg .form-control {
   .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @input-border-radius-large);
+=======
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+.input-lg {
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 
@@ -333,6 +397,7 @@ input[type="checkbox"] {
   .form-control {
     padding-right: (@input-height-base * 1.25);
   }
+<<<<<<< HEAD
 }
 // Feedback icon (requires .glyphicon classes)
 .form-control-feedback {
@@ -356,6 +421,20 @@ input[type="checkbox"] {
   width: @input-height-small;
   height: @input-height-small;
   line-height: @input-height-small;
+=======
+
+  // Feedback icon (requires .glyphicon classes)
+  .form-control-feedback {
+    position: absolute;
+    top: (@line-height-computed + 5); // Height of the `label` and its margin
+    right: 0;
+    display: block;
+    width: @input-height-base;
+    height: @input-height-base;
+    line-height: @input-height-base;
+    text-align: center;
+  }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Feedback states
@@ -369,6 +448,7 @@ input[type="checkbox"] {
   .form-control-validation(@state-danger-text; @state-danger-text; @state-danger-bg);
 }
 
+<<<<<<< HEAD
 // Reposition feedback icon if input has visible label above
 .has-feedback label {
 
@@ -378,6 +458,16 @@ input[type="checkbox"] {
   &.sr-only ~ .form-control-feedback {
      top: 0;
   }
+=======
+
+// Static form control text
+//
+// Apply class to a `p` element to make any string of text align with labels in
+// a horizontal form layout.
+
+.form-control-static {
+  margin-bottom: 0; // Remove default margin from `p`
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 
@@ -394,6 +484,10 @@ input[type="checkbox"] {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 // Inline forms
 //
 // Make forms appear inline(-block) by adding the `.form-inline` class. Inline
@@ -422,6 +516,7 @@ input[type="checkbox"] {
       width: auto; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
     }
+<<<<<<< HEAD
 
     // Make static controls behave like regular ones
     .form-control-static {
@@ -439,6 +534,8 @@ input[type="checkbox"] {
       }
     }
 
+=======
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     // Input groups need that 100% width though
     .input-group > .form-control {
       width: 100%;
@@ -457,6 +554,7 @@ input[type="checkbox"] {
       display: inline-block;
       margin-top: 0;
       margin-bottom: 0;
+<<<<<<< HEAD
       vertical-align: middle;
 
       label {
@@ -470,6 +568,21 @@ input[type="checkbox"] {
     }
 
     // Re-override the feedback icon.
+=======
+      padding-left: 0;
+      vertical-align: middle;
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      float: none;
+      margin-left: 0;
+    }
+
+    // Validation states
+    //
+    // Reposition the icon because it's now within a grid column and columns have
+    // `position: relative;` on them. Also accounts for the grid gutter padding.
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     .has-feedback .form-control-feedback {
       top: 0;
     }
@@ -484,9 +597,14 @@ input[type="checkbox"] {
 
 .form-horizontal {
 
+<<<<<<< HEAD
   // Consistent vertical alignment of radios and checkboxes
   //
   // Labels also get some reset styles, but that is scoped to a media query below.
+=======
+  // Consistent vertical alignment of labels, radios, and checkboxes
+  .control-label,
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   .radio,
   .checkbox,
   .radio-inline,
@@ -507,6 +625,7 @@ input[type="checkbox"] {
     .make-row();
   }
 
+<<<<<<< HEAD
   // Reset spacing and right align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: @screen-sm-min) {
@@ -514,6 +633,16 @@ input[type="checkbox"] {
       text-align: right;
       margin-bottom: 0;
       padding-top: (@padding-base-vertical + 1); // Default padding plus a border
+=======
+  .form-control-static {
+    padding-top: (@padding-base-vertical + 1);
+  }
+
+  // Only right align form labels here when the columns stop stacking
+  @media (min-width: @screen-sm-min) {
+    .control-label {
+      text-align: right;
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     }
   }
 
@@ -522,6 +651,7 @@ input[type="checkbox"] {
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
+<<<<<<< HEAD
     right: (@grid-gutter-width / 2);
   }
 
@@ -543,4 +673,9 @@ input[type="checkbox"] {
       }
     }
   }
+=======
+    top: 0;
+    right: (@grid-gutter-width / 2);
+  }
+>>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }

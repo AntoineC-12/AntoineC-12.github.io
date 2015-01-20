@@ -1011,20 +1011,11 @@ footer {
   #lang {
     display: inline-block;
     z-index: 100;
-    right: 0;
-    height: 50px;
-    position: fixed;
-    top: 0px;
-    padding-right: 4px;
-    padding-top: 12px;
-  }
-
-  #lang .btn-left {
-    margin-right: 50%;
-  }
-
-  #lang .btn-right {
-    margin-right: 4px;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    padding-top: 0px;
   }
 
   #banner {

@@ -1,9 +1,5 @@
 /* ========================================================================
-<<<<<<< HEAD
  * Bootstrap: transition.js v3.3.1
-=======
- * Bootstrap: transition.js v3.1.1
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
  * Copyright 2011-2014 Twitter, Inc.
@@ -21,17 +17,10 @@
     var el = document.createElement('bootstrap')
 
     var transEndEventNames = {
-<<<<<<< HEAD
       WebkitTransition : 'webkitTransitionEnd',
       MozTransition    : 'transitionend',
       OTransition      : 'oTransitionEnd otransitionend',
       transition       : 'transitionend'
-=======
-      'WebkitTransition' : 'webkitTransitionEnd',
-      'MozTransition'    : 'transitionend',
-      'OTransition'      : 'oTransitionEnd otransitionend',
-      'transition'       : 'transitionend'
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     }
 
     for (var name in transEndEventNames) {
@@ -45,14 +34,9 @@
 
   // http://blog.alexmaccaw.com/css-transitions
   $.fn.emulateTransitionEnd = function (duration) {
-<<<<<<< HEAD
     var called = false
     var $el = this
     $(this).one('bsTransitionEnd', function () { called = true })
-=======
-    var called = false, $el = this
-    $(this).one($.support.transition.end, function () { called = true })
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
     setTimeout(callback, duration)
     return this
@@ -60,7 +44,6 @@
 
   $(function () {
     $.support.transition = transitionEnd()
-<<<<<<< HEAD
 
     if (!$.support.transition) return
 
@@ -71,8 +54,6 @@
         if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
       }
     }
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   })
 
 }(jQuery);

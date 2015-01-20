@@ -15,12 +15,7 @@
 // Container that the modal scrolls within
 .modal {
   display: none;
-<<<<<<< HEAD
   overflow: hidden;
-=======
-  overflow: auto;
-  overflow-y: scroll;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   position: fixed;
   top: 0;
   right: 0;
@@ -38,15 +33,11 @@
     .translate(0, -25%);
     .transition-transform(~"0.3s ease-out");
   }
-<<<<<<< HEAD
   &.in .modal-dialog { .translate(0, 0) }
 }
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
-=======
-  &.in .modal-dialog { .translate(0, 0)}
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Shell div to position the modal with bottom padding
@@ -66,28 +57,15 @@
   .box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
-<<<<<<< HEAD
   outline: 0;
-=======
-  outline: none;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 }
 
 // Modal background
 .modal-backdrop {
-<<<<<<< HEAD
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-=======
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: @zindex-modal-background;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   background-color: @modal-backdrop-bg;
   // Fade for backdrop
   &.fade { .opacity(0); }
@@ -121,12 +99,7 @@
 
 // Footer (for actions)
 .modal-footer {
-<<<<<<< HEAD
   padding: @modal-inner-padding;
-=======
-  margin-top: 15px;
-  padding: (@modal-inner-padding - 1) @modal-inner-padding @modal-inner-padding;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   text-align: right; // right align buttons
   border-top: 1px solid @modal-footer-border-color;
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
@@ -146,7 +119,6 @@
   }
 }
 
-<<<<<<< HEAD
 // Measure scrollbar width for padding body during modal show/hide
 .modal-scrollbar-measure {
   position: absolute;
@@ -156,8 +128,6 @@
   overflow: scroll;
 }
 
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
   // Automatically set modal's width for larger viewports

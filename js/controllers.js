@@ -2,7 +2,6 @@
 
 /* Controllers */
 
-<<<<<<< HEAD
 var myAppControllers = angular.module('myAppControllers', []);
 
 myAppControllers.controller('resumeCtrl', ['$scope','$translate', 'localStorageService',
@@ -21,23 +20,4 @@ myAppControllers.controller('resumeCtrl', ['$scope','$translate', 'localStorageS
   		localStorageService.set('lang', langKey);
   	};
 
-=======
-var phonecatControllers = angular.module('phonecatControllers', []);
-
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
-    $scope.orderProp = 'age';
-  }]);
-
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
-    });
-
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
-    }
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   }]);

@@ -7,7 +7,6 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-<<<<<<< HEAD
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
@@ -16,15 +15,6 @@
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary:         darken(#428bca, 6.5%);
-=======
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
-
-@brand-primary:         #428bca;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -33,11 +23,7 @@
 
 //== Scaffolding
 //
-<<<<<<< HEAD
 //## Settings for some of the most global styles.
-=======
-// ## Settings for some of the most global styles.
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 //** Background color for `<body>`.
 @body-bg:               #fff;
@@ -48,11 +34,8 @@
 @link-color:            @brand-primary;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
-<<<<<<< HEAD
 //** Link hover decoration.
 @link-hover-decoration: underline;
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 
 //== Typography
@@ -88,7 +71,6 @@
 @headings-color:          inherit;
 
 
-<<<<<<< HEAD
 //== Iconography
 //
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
@@ -101,16 +83,6 @@
 @icon-font-svg-id:        "glyphicons_halflingsregular";
 
 
-=======
-//-- Iconography
-//
-//## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
-
-@icon-font-path:          "../fonts/";
-@icon-font-name:          "glyphicons-halflings-regular";
-@icon-font-svg-id:        "glyphicons_halflingsregular";
-
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
@@ -212,7 +184,6 @@
 @input-color:                    @gray;
 //** `<input>` border color
 @input-border:                   #ccc;
-<<<<<<< HEAD
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -222,19 +193,11 @@
 //** Small `.form-control` border radius
 @input-border-radius-small:      @border-radius-small;
 
-=======
-//** `<input>` border radius
-@input-border-radius:            @border-radius-base;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //** Border color for inputs on focus
 @input-border-focus:             #66afe9;
 
 //** Placeholder text color
-<<<<<<< HEAD
 @input-color-placeholder:        #999;
-=======
-@input-color-placeholder:        @gray-light;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
@@ -251,12 +214,9 @@
 //** Border color for textual input addons
 @input-group-addon-border-color: @input-border;
 
-<<<<<<< HEAD
 //** Disabled cursor for form controls and buttons.
 @cursor-disabled:                not-allowed;
 
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 //== Dropdowns
 //
@@ -289,11 +249,7 @@
 //** Text color for headers within dropdown menus.
 @dropdown-header-color:          @gray-light;
 
-<<<<<<< HEAD
 //** Deprecated `@dropdown-caret-color` as of v3.1.0
-=======
-// Note: Deprecated @dropdown-caret-color as of v3.1.0
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @dropdown-caret-color:           #000;
 
 
@@ -306,18 +262,10 @@
 
 @zindex-navbar:            1000;
 @zindex-dropdown:          1000;
-<<<<<<< HEAD
 @zindex-popover:           1060;
 @zindex-tooltip:           1070;
 @zindex-navbar-fixed:      1030;
 @zindex-modal:             1040;
-=======
-@zindex-popover:           1010;
-@zindex-tooltip:           1030;
-@zindex-navbar-fixed:      1030;
-@zindex-modal-background:  1040;
-@zindex-modal:             1050;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 
 //== Media queries breakpoints
@@ -325,7 +273,6 @@
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
 
 // Extra small screen / phone
-<<<<<<< HEAD
 //** Deprecated `@screen-xs` as of v3.0.1
 @screen-xs:                  480px;
 //** Deprecated `@screen-xs-min` as of v3.2.0
@@ -352,29 +299,6 @@
 @screen-lg:                  1200px;
 @screen-lg-min:              @screen-lg;
 //** Deprecated `@screen-lg-desktop` as of v3.0.1
-=======
-// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
-@screen-xs:                  480px;
-@screen-xs-min:              @screen-xs;
-@screen-phone:               @screen-xs-min;
-
-// Small screen / tablet
-// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
-@screen-sm:                  768px;
-@screen-sm-min:              @screen-sm;
-@screen-tablet:              @screen-sm-min;
-
-// Medium screen / desktop
-// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
-@screen-md:                  992px;
-@screen-md-min:              @screen-md;
-@screen-desktop:             @screen-md-min;
-
-// Large screen / wide desktop
-// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
-@screen-lg:                  1200px;
-@screen-lg-min:              @screen-lg;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @screen-lg-desktop:          @screen-lg-min;
 
 // So media queries don't overlap when required, provide a maximum
@@ -403,29 +327,17 @@
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Small screen / tablet
-<<<<<<< HEAD
 @container-tablet:             (720px + @grid-gutter-width);
-=======
-@container-tablet:             ((720px + @grid-gutter-width));
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //** For `@screen-sm-min` and up.
 @container-sm:                 @container-tablet;
 
 // Medium screen / desktop
-<<<<<<< HEAD
 @container-desktop:            (940px + @grid-gutter-width);
-=======
-@container-desktop:            ((940px + @grid-gutter-width));
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //** For `@screen-md-min` and up.
 @container-md:                 @container-desktop;
 
 // Large screen / wide desktop
-<<<<<<< HEAD
 @container-large-desktop:      (1140px + @grid-gutter-width);
-=======
-@container-large-desktop:      ((1140px + @grid-gutter-width));
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
 
@@ -468,20 +380,12 @@
 
 // Inverted navbar
 // Reset inverted navbar basics
-<<<<<<< HEAD
 @navbar-inverse-color:                      lighten(@gray-light, 15%);
-=======
-@navbar-inverse-color:                      @gray-light;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @navbar-inverse-bg:                         #222;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-<<<<<<< HEAD
 @navbar-inverse-link-color:                 lighten(@gray-light, 15%);
-=======
-@navbar-inverse-link-color:                 @gray-light;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
@@ -511,11 +415,6 @@
 @nav-disabled-link-color:                   @gray-light;
 @nav-disabled-link-hover-color:             @gray-light;
 
-<<<<<<< HEAD
-=======
-@nav-open-link-hover-color:                 #fff;
-
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //== Tabs
 @nav-tabs-border-color:                     #ddd;
 
@@ -640,11 +539,7 @@
 //** Popover arrow width
 @popover-arrow-width:                 10px;
 //** Popover arrow color
-<<<<<<< HEAD
 @popover-arrow-color:                 @popover-bg;
-=======
-@popover-arrow-color:                 #fff;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 //** Popover outer arrow width
 @popover-arrow-outer-width:           (@popover-arrow-width + 1);
@@ -682,11 +577,7 @@
 //##
 
 //** Padding applied to the modal body
-<<<<<<< HEAD
 @modal-inner-padding:         15px;
-=======
-@modal-inner-padding:         20px;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 //** Padding applied to the modal title
 @modal-title-padding:         15px;
@@ -747,11 +638,8 @@
 @progress-bg:                 #f5f5f5;
 //** Progress bar text color
 @progress-bar-color:          #fff;
-<<<<<<< HEAD
 //** Variable for setting rounded corners on progress bar.
 @progress-border-radius:      @border-radius-base;
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 //** Default progress bar color
 @progress-bar-bg:             @brand-primary;
@@ -776,7 +664,6 @@
 //** List group border radius
 @list-group-border-radius:      @border-radius-base;
 
-<<<<<<< HEAD
 //** Background color of single list items on hover
 @list-group-hover-bg:           #f5f5f5;
 //** Text color of active list items
@@ -797,19 +684,6 @@
 
 @list-group-link-color:         #555;
 @list-group-link-hover-color:   @list-group-link-color;
-=======
-//** Background color of single list elements on hover
-@list-group-hover-bg:           #f5f5f5;
-//** Text color of active list elements
-@list-group-active-color:       @component-active-color;
-//** Background color of active list elements
-@list-group-active-bg:          @component-active-bg;
-//** Border color of active list elements
-@list-group-active-border:      @list-group-active-bg;
-@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
-
-@list-group-link-color:         #555;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @list-group-link-heading-color: #333;
 
 
@@ -819,11 +693,8 @@
 
 @panel-bg:                    #fff;
 @panel-body-padding:          15px;
-<<<<<<< HEAD
 @panel-heading-padding:       10px 15px;
 @panel-footer-padding:        @panel-heading-padding;
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 @panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
@@ -963,11 +834,8 @@
 //
 //##
 
-<<<<<<< HEAD
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 //** Text muted color
 @text-muted:                  @gray-light;
 //** Abbreviations and acronyms border color
@@ -982,21 +850,7 @@
 @blockquote-border-color:     @gray-lighter;
 //** Page header border color
 @page-header-border-color:    @gray-lighter;
-<<<<<<< HEAD
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
-=======
-
-
-//== Miscellaneous
-//
-//##
-
-//** Horizontal line color.
-@hr-border:                   @gray-lighter;
-
-//** Horizontal offset for forms and lists.
-@component-offset-horizontal: 180px;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b

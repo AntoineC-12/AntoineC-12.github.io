@@ -62,11 +62,7 @@ p {
 .lead {
   margin-bottom: @line-height-computed;
   font-size: floor((@font-size-base * 1.15));
-<<<<<<< HEAD
   font-weight: 300;
-=======
-  font-weight: 200;
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
   line-height: 1.4;
 
   @media (min-width: @screen-sm-min) {
@@ -78,7 +74,6 @@ p {
 // Emphasis & misc
 // -------------------------
 
-<<<<<<< HEAD
 // Ex: (12px small font / 14px base font) * 100% = about 85%
 small,
 .small {
@@ -90,29 +85,18 @@ mark,
   background-color: @state-warning-bg;
   padding: .2em;
 }
-=======
-// Ex: 14px base font * 85% = about 12px
-small,
-.small  { font-size: 85%; }
-
-// Undo browser default styling
-cite    { font-style: normal; }
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 // Alignment
 .text-left           { text-align: left; }
 .text-right          { text-align: right; }
 .text-center         { text-align: center; }
 .text-justify        { text-align: justify; }
-<<<<<<< HEAD
 .text-nowrap         { white-space: nowrap; }
 
 // Transformation
 .text-lowercase      { text-transform: lowercase; }
 .text-uppercase      { text-transform: uppercase; }
 .text-capitalize     { text-transform: capitalize; }
-=======
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 // Contextual colors
 .text-muted {
@@ -168,11 +152,7 @@ cite    { font-style: normal; }
 
 
 // Lists
-<<<<<<< HEAD
 // -------------------------
-=======
-// --------------------------------------------------
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 // Unordered and Ordered lists
 ul,
@@ -226,7 +206,6 @@ dd {
 // Defaults to being stacked without any of the below styles applied, until the
 // grid breakpoint is reached (default of ~768px).
 
-<<<<<<< HEAD
 .dl-horizontal {
   dd {
     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
@@ -236,36 +215,19 @@ dd {
     dt {
       float: left;
       width: (@dl-horizontal-offset - 20);
-=======
-@media (min-width: @grid-float-breakpoint) {
-  .dl-horizontal {
-    dt {
-      float: left;
-      width: (@component-offset-horizontal - 20);
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
       clear: left;
       text-align: right;
       .text-overflow();
     }
     dd {
-<<<<<<< HEAD
       margin-left: @dl-horizontal-offset;
-=======
-      margin-left: @component-offset-horizontal;
-      &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
     }
   }
 }
 
-<<<<<<< HEAD
 
 // Misc
 // -------------------------
-=======
-// MISC
-// ----
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 
 // Abbreviations and acronyms
 abbr[title],
@@ -332,15 +294,6 @@ blockquote.pull-right {
   }
 }
 
-<<<<<<< HEAD
-=======
-// Quotes
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-
->>>>>>> 5e8dcaa3dc5c9beb36603e3f2973f0d47fddb85b
 // Addresses
 address {
   margin-bottom: @line-height-computed;

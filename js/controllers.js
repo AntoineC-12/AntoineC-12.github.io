@@ -15,8 +15,8 @@ myAppControllers.controller('resumeCtrl', ['$scope','$translate', 'localStorageS
   	$scope.toggleLanguage = function(langKey) {
   		$scope.toggleButton = langKey == 'fr' ? "English" : "Français";
   		$scope.nextLang = langKey == 'fr' ? 'en' : 'fr';
-  		$translate.use(langKey).
-  		preferredLanguage(langKey);
+  		$translate.use(langKey);
+  		$translate.preferredLanguage(langKey);
   		localStorageService.set('lang', langKey);
   	};
 

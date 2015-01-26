@@ -39,7 +39,6 @@ myAppDirectives.directive('mySection', ['$translate', '$filter', function($trans
 
 		return {
 			restrict: 'E',
-			scope: true,
 			link: linkFN
 		};
 	}

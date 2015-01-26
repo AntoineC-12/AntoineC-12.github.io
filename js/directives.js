@@ -3,7 +3,7 @@
 /* Directives */
 var myAppDirectives = angular.module('myAppDirectives',[]);
 
-myAppDirectives.directive('mySection', ['$translate', '$filter', function($translate, $filter) {
+myAppDirectives.directive('mySection', ['$translate', '$compile', function($translate, $compile) {
 		var linkFN, sectionHeight;
 		sectionHeight = function() {
   			var total    = $(window).height(),

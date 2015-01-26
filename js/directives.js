@@ -19,13 +19,7 @@ myAppDirectives.directive('mySection', ['$translate', '$filter', function($trans
 		$(window).resize(sectionHeight);
 		linkFN = function($scope, element, attrs) {
 			$("section h2, section h3").each(function(){  //Petite modification pour éviter que les titres h1 n'apparaissent dans le menu et pour les h3 y apparaissent.
-				// var text = "ref"+ /\'(.*)\'/.exec($(this).text())[1];
-				// eval("$scope."+text+ " = ''");
-				// $translate(/\'(.*)\'/.exec($(this).text())[0])
-    //     			.then(function (translatedValue) {
-    //       			eval("$scope."+text+" = "+translatedValue);
-    //     		});   
-    // 			$("nav ul").append("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'>" + eval("$scope."+text)+ "</a></li>");
+     			$("nav ul").append($compile("<li class='tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,'') + "'> "+ $(this).text() + "</a></li>")($scope));
     			$(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g,''));
    				$("nav ul li:first-child a").parent().addClass("active");
   			});

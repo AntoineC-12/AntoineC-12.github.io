@@ -6,7 +6,8 @@ var myApp = angular.module('myApp', [
   'ngRoute',
   'myAppControllers',
   'myAppTranslate',
-  'LocalStorageModule'
+  'LocalStorageModule',
+  'myAppDirectives'
 ]);
 
 myApp.config(['localStorageServiceProvider', function(localStorageServiceProvider){

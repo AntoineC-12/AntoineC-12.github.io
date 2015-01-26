@@ -1,4 +1,4 @@
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
   <script src="javascripts/main.js"></script>
   <header>
         <h1>Antoine POUILLAUDE</h1>
@@ -17,12 +17,18 @@
       </div><!-- end banner -->
     <div class="wrapper">
       <nav>
-        <ul></ul>
+        <ul><li class="tag-h2 active"><a href="#-about--translate-">
+{{ 'ABOUT' | translate }}</a></li><li class="tag-h2"><a href="#-edu--translate-">
+{{ 'EDU' | translate }}</a></li><li class="tag-h2"><a href="#-exp--translate-">
+{{ 'EXP' | translate }}</a></li><li class="tag-h3"><a href="#-exp_school--translate-">{{ 'EXP_SCHOOL' | translate }}</a></li><li class="tag-h3"><a href="#-exp_perso--translate-">{{ 'EXP_PERSO' | translate }}</a></li><li class="tag-h3"><a href="#-exp_pro--translate-">{{ 'EXP_PRO' | translate }}</a></li><li class="tag-h2"><a href="#-skills--translate-">
+{{ 'SKILLS' | translate }}</a></li><li class="tag-h3"><a href="#-skills_compu--translate-">{{ 'SKILLS_COMPU' | translate }}</a></li><li class="tag-h3"><a href="#-skills_lang--translate-">{{ 'SKILLS_LANG' | translate }}</a></li><li class="tag-h3"><a href="#-skills_ot--translate-">{{ 'SKILLS_OT' | translate }}</a></li><li class="tag-h2"><a href="#-misc--translate-">
+{{ 'MISC' | translate }}</a></li></ul>
       </nav>
+      <my-section> 
       <section class="text">
         <h1 class="cv" id="title">{{ 'RESUME_TITLE' | translate }}</h1>
         <p>
-        <a href="/internship/index.html">{{ 'VIEW_PRESENTATION' | translate }}</a> {{ 'MADE_WITH' | translate }} <a href="https://github.com/bartaz/impress.js/">impress.js</a>.
+        <a href="http://antony-po.net/internship/index.html">{{ 'VIEW_PRESENTATION' | translate }}</a> {{ 'MADE_WITH' | translate }} <a href="https://github.com/bartaz/impress.js/">impress.js</a>.
         </p>
         <h2>
 <a name="about" class="anchor" href="#about"><span class="octicon octicon-link"></span></a>{{ 'ABOUT' | translate }}</h2>
@@ -35,12 +41,12 @@
 <p><ul>
   <li>
   <p><strong>Diplôme d'ingénieur en informatique</strong>{{ 'EDU_INGE_TRANS' | translate }}<span class="right">{{ 'EDU_INGE_PERIOD' | translate }}</span><br>
-  <span class="tabulation"><em>Université de Technologie de Compiègne</em>, Compiègne, FRANCE</span><br>
+  <span class="tabulation"><em><a href="http://www.utc.fr/">Université de Technologie de Compiègne</a></em>, Compiègne, FRANCE</span><br>
   <span class="tabulation">{{ 'EDU_INGE_DEGREE' | translate }}</span></p>
   </li>
   <li>
   <p><strong>Classe Préparatoire </strong>{{ 'EDU_PREPA_TRANS' | translate }}<span class="right">{{ 'EDU_PREPA_PERIOD' | translate }}</span><br>
-  <span class="tabulation"><em>Lycée Michel de Montaigne</em>, Bordeaux, FRANCE <br></span></p>
+  <span class="tabulation"><em><a href="http://montaigne-bordeaux.fr/">Lycée Michel de Montaigne</a></em>, Bordeaux, FRANCE <br></span></p>
   </li>
   <li>
   <p><strong>Baccalauréat Scientifique</strong>{{ 'EDU_BAC_TRANS' | translate }}<span class="right">{{ 'EDU_BAC_DATE_GRAD' | translate }}</span><br>
@@ -127,18 +133,18 @@
 <p><ul>
   <li>
   <p><strong>{{ 'EXP_PRO_NVL' | translate }}</strong><span class="right">{{ 'EXP_PRO_NVL_PERIOD' | translate }}</span><br>
-  <em>Groupe NVL, Idline</em>, Angoulême, FRANCE<br>
+  <em><a href="http://groupe.nvl.fr/">Groupe NVL</a>, Idline</em>, Angoulême, FRANCE<br>
   {{ 'EXP_PRO_NVL_DESC' | translate }}</p>
   </li>
   <li>
   <p><strong>{{ 'EXP_PRO_MET' | translate }}</strong><span class="right">{{ 'EXP_PRO_MET_PERIOD' | translate }}</span><br>
-  <em>Metadot Corporation</em>, Austin, TX, USA <br>
+  <em><a href="http://www.metadot.com/">Metadot Corporation</a></em>, Austin, TX, USA <br>
   {{ 'EXP_PRO_MET_DESC_P1' | translate }}<a href="http://www.mojohelpdesk.com/">Mojohelpdesk</a>{{ 'EXP_PRO_MET_DESC_P2' | translate }}
   </p>
   </li>
   <li>
   <p><strong>{{ 'EXP_PRO_CASS' | translate }}</strong><span class="right">{{ 'EXP_PRO_CASS_PERIOD' | translate }}</span><br>
-  <em>Cassidian Aviation Training Services</em>, Cognac Air, FRANCE <br>
+  <em><a href="http://www.defenceandsecurity-airbusds.com/fr_FR/web/guest/cognac">Cassidian Aviation Training Services</a></em>, Cognac Air, FRANCE <br>
   {{ 'EXP_PRO_CASS_DESC' | translate }}</p>
   </li>
   <li>
@@ -217,7 +223,12 @@
   </ul>
   </li>
 </ul></p>
-      </section>
+
+</li>
+</ul>
+</p>
+</section>
+      </my-section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>

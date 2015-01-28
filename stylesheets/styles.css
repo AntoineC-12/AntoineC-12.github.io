@@ -721,6 +721,10 @@ header p {
   z-index: 120;
 }
 
+.rightCard #test{
+  width: 150px;
+}
+
 #lang {
   display: none;
 }

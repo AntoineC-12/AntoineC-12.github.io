@@ -47,6 +47,11 @@ myAppDirectives.directive('mySection', ['$translate', '$compile', function($tran
 myAppDirectives.directive('myLinkedInCard', ['$compile', function($compile){
 	return {
 		restrict: 'E',
-		template: '<script id="linkedIn" type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="inline" data-related="false"></script>' 
-	}; 
+		template: '<script id="linkedIn" type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="inline" data-related="false"></script>', 
+		link: function($scope, element, attrs){
+			if (IN.parse) {
+				IN.parse();
+			}
+		}
+	};
 }]);

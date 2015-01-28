@@ -716,10 +716,13 @@ header p {
   border: 1px solid #f0b500;
 }
 
-.rightCard #linkedIn{
-  border: 1px solid #000;
-  display: inline-block;
-  position: relative;
+.rightCard > #linkedIn{
+  display: inline;
+  position:absolute;
+  min-height:100%;
+  display:block;
+  -webkit-transform: translate(-50%, -50%);
+  min-width:100%;
   margin-right: 8px;
   margin-left: 8px;
   z-index: 120;

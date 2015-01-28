@@ -713,7 +713,6 @@ header p {
   position: fixed;
   margin-left: 450px;
   z-index: 110;
-  border: 1px solid #f0b500;
 }
 
 #linkedIn {
@@ -916,7 +915,7 @@ footer {
   }
   #linkedIn {
     display: inline;
-    
+    right: 8px;
   }
 }
 

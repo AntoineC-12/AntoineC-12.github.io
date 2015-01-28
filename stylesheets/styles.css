@@ -708,7 +708,7 @@ header p {
 #linkedIn {
   display: block;
   right: 8px;
-  height: auto;
+  height: 110px;
   top: 8px;
   position: fixed;
   margin-left: 50px;

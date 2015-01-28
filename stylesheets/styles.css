@@ -708,10 +708,11 @@ header p {
 .rightCard {
   z-index: 100;
   width: 230px;
+  height: 500px;
   top: 220px;
   position: fixed;
   left: 50%;
-  margin-left: 200px;
+  margin-left: 400px;
 }
 
 #lang {

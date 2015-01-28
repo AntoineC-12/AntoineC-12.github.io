@@ -718,11 +718,9 @@ header p {
 
 .rightCard > #linkedIn{
   display: inline;
-  position:absolute;
-  min-height:100%;
-  display:block;
-  -webkit-transform: translate(-50%, -50%);
-  min-width:100%;
+  position:relative;
+  width: 100%;
+  height: auto;
   margin-right: 8px;
   margin-left: 8px;
   z-index: 120;

@@ -719,6 +719,8 @@ header p {
 .rightCard > #linkedIn{
   display: inline;
   position: absolute;
+  right: 8px;
+  top: 8px;
   width: auto;
   height: auto;
   margin-right: 8px;

@@ -707,7 +707,7 @@ header p {
 
 .rightCard {
   display: block;
-  margin-right: 8px;
+  right: 8px;
   height: 350px;
   top: 220px;
   position: fixed;

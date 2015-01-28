@@ -713,7 +713,7 @@ header p {
   position: fixed;
   left: 50%;
   margin-left: 450px;
-  background: #000;
+  border: 1px solid #f0b500;
 }
 
 .rightCard script{

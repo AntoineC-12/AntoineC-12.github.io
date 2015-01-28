@@ -88,7 +88,11 @@ myAppDirectives.directive('myEmail', [function() {
 
 	return {
 		restric: 'E',
-		template: '<button onClick="sendEmail()">Contact me</button>',
+		compile: function(element, attrs)
+        {
+            var htmlText = '<button ng-click="sendEmail()">Contact me</button>';
+            element.replaceWith(htmlText);
+        }
 		controller: 'myEmailCtrl'
 	};
 

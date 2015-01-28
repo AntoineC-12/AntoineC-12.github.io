@@ -44,15 +44,32 @@ myAppDirectives.directive('mySection', ['$translate', '$compile', function($tran
 	}
 ]);
 
-myAppDirectives.directive('myLinkedInCard', [ function(){
-	var linkFN = function($scope, element, attrs) {
-        	if(IN.parse)
-        		IN.parse();
-    	};
+myAppDirectives.directive('myLinkedInCard', [function(){
+	var linkedInCard='<script id="linkedIn" type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="inline" data-related="false"></script>';
+	var linkedInlink='<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="hover" data-text="Antoine POUILLAUDE" data-related="false"></script>';
 
-    return {
-        restrict: "E",
-        template: '<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="click" data-text="Antoine POUILLAUDE" data-related="false"></script>',
-        link: linkFN
-    };
+	var linkFN = function($scope, element, attrs) {
+		if(IN.parse)
+			IN.parse();
+	};
+
+	return {
+		restrict: 'E',
+		template: '<script id="linkedIn" type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="inline" data-related="false"></script>',
+		link: linkFN
+	};
 }]);
+
+myAppDirectives.directive('myLinkedIn', [function(){
+	var linkFN = function($scope, element, attrs) {
+		if(IN.parse)
+			IN.parse();
+	};
+
+	return {
+		restrict: 'E',
+		template: '<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="hover" data-text="Antoine POUILLAUDE" data-related="false"></script>',
+		link: linkFN
+	};
+}]);
+

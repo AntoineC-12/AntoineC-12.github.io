@@ -706,7 +706,7 @@ header p {
 
 
 .rightCard {
-  display: inline-block;
+  display: block;
   z-index: 150;
   width: 350px;
   height: 350px;
@@ -714,6 +714,7 @@ header p {
   position: fixed;
   left: 50%;
   margin-left: 450px;
+  background: #eae6d1;
 }
 
 #lang {

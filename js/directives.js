@@ -80,11 +80,15 @@ myAppDirectives.directive('myEmail', [function() {
 	for(var i=0;i<zselyno.length;i++){xsimswq[zselyno[i]] = ruadvhq[i];}
 	alert(xsimswq.join(''));
 
-	var myEmailCtrl = function() {};	
+	var myEmailCtrl = function() {
+		var sendEmail = function() {
+			alert("Send email.");
+		};
+	};	
 
 	return {
 		restric: 'E',
-		template: '<a>Contact me</a>',
+		template: '<button onClick="sendEmail()">Contact me</button>',
 		controller: 'myEmailCtrl'
 	};
 

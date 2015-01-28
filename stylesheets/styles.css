@@ -914,8 +914,7 @@ footer {
     display: none;
   }
   #linkedIn {
-    display: inline;
-    float: right;
+    display: block;
     right: 8px;
   }
 }

@@ -710,7 +710,7 @@ header p {
   right: 8px;
   height: 350px;
   top: 220px;
-  position: relative;
+  position: fixed;
   left: 50%;
   margin-left: 450px;
   border: 1px solid #f0b500;

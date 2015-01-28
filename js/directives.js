@@ -49,7 +49,7 @@ myAppDirectives.directive('myLinkedInCard', ['$window', '$compile', function($wi
 	var linkedInlink='<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="hover" data-text="Antoine POUILLAUDE" data-related="false"></script>';
 
 	var getTemplate = function(w) {
-		var width = w.width();
+		var width = w[0].screen.width;
 		if (width > 1635)
 			return linkedInCard;
 		else

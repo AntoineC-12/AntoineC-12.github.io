@@ -705,7 +705,7 @@ header p {
 }
 
 
-#linkedIn {
+#linkedInCard {
   display: block;
   left: 50%;
   height: 110px;
@@ -714,6 +714,10 @@ header p {
   margin-left: 450px;
   z-index: 110;
   border: 1px solid #f0b500;
+}
+
+#linkedIn {
+  display: none;
 }
 
 #lang {
@@ -904,6 +908,16 @@ footer {
   bottom: 20px;
   text-align: right;
   line-height: 16px;
+}
+
+@media print, screen and (max-width: 1635px) {
+  #linkedInCard {
+    display: none;
+  }
+  #linkedIn {
+    display: inline;
+    
+  }
 }
 
 @media print, screen and (max-width: 1070px) {

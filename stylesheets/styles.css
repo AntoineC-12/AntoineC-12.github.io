@@ -718,6 +718,9 @@ header p {
 #linkedIn {
   display: none;
 }
+#linkedInS {
+    display: none;
+}
 
 #lang {
   display: none;
@@ -909,20 +912,11 @@ footer {
   line-height: 16px;
 }
 
-@media only handheld {
-  #linkedIn {
+@media print, screen and (max-width: 1635px) {
+  #linkedInCard {
     display: none;
   }
   #linkedInS {
-    display: block;
-    left: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
-
-@media print, screen and (max-width: 1635px) {
-  #linkedInCard {
     display: none;
   }
   #linkedIn {
@@ -952,6 +946,10 @@ footer {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
+  }
+
+  #linkedInS {
+    display: none;
   }
 
   #banner .lang {
@@ -1007,6 +1005,10 @@ footer {
     display: none;
   }
 
+  #linkedInS {
+    display: none;
+  }
+
   #banner {
     top: 80px;
   }
@@ -1028,7 +1030,24 @@ footer {
     position: static;
   }
 }
+
+@media print, screen and (max-width: 550px) {
+  #linkedIn {
+    display: none;
+  }
+
+  #linkedInS {
+    display: block;
+    left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
 @media print, screen and (max-width: 480px) {
+  #linkedIn {
+    display: none;
+  }
+
   header {
     position: relative;
     padding: 5px 0px;

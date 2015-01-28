@@ -704,6 +704,13 @@ header p {
   margin: 0px;
 }
 
+
+.rightCard {
+  position: relative;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
 #lang {
   display: none;
 }

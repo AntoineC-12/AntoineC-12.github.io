@@ -707,11 +707,11 @@ header p {
 
 #linkedIn {
   display: block;
-  right: 8px;
+  left: 50%;
   height: 110px;
-  top: 8px;
+  top: 230px;
   position: fixed;
-  margin-left: 50px;
+  margin-left: 450px;
   z-index: 110;
   border: 1px solid #f0b500;
 }

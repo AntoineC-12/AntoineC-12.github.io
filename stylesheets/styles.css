@@ -909,6 +909,18 @@ footer {
   line-height: 16px;
 }
 
+@media only handheld {
+  #linkedIn {
+    display: none;
+  }
+  #linkedInS {
+    display: block;
+    left: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
 @media print, screen and (max-width: 1635px) {
   #linkedInCard {
     display: none;

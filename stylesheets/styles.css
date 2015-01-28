@@ -707,14 +707,13 @@ header p {
 
 .rightCard {
   display: block;
-  z-index: 150;
   width: 350px;
   height: 350px;
   top: 220px;
   position: fixed;
   left: 50%;
   margin-left: 450px;
-  background: #eae6d1;
+  background: #000;
 }
 
 #lang {

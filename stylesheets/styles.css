@@ -710,7 +710,7 @@ header p {
   right: 8px;
   height: 350px;
   top: 220px;
-  position: fixed;
+  position: relative;
   left: 50%;
   margin-left: 450px;
   border: 1px solid #f0b500;
@@ -718,7 +718,7 @@ header p {
 
 .rightCard > #linkedIn{
   display: inline;
-  position:relative;
+  position: absolute;
   width: auto;
   height: auto;
   margin-right: 8px;

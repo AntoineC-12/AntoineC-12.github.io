@@ -49,4 +49,4 @@ myAppDirectives.directive('myLinkedInCard', ['$compile', function($compile){
 		restrict: 'E',
 		template: '<script id="linkedIn" type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="inline" data-related="false"></script>' 
 	}; 
-});
+}]);

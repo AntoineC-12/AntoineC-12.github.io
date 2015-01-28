@@ -706,10 +706,12 @@ header p {
 
 
 .rightCard {
-  position: relative;
   z-index: 100;
-  margin-top: 20px;
-  margin-right: 10px;
+  width: 230px;
+  top: 220px;
+  position: fixed;
+  left: 50%;
+  margin-left: 200px;
 }
 
 #lang {

@@ -56,13 +56,18 @@ myAppDirectives.directive('myLinkedInCard', ['$window', '$compile', function($wi
 			return linkedInlink;
 	};
 
-	var linkFN = function($scope, element, attrs) {
+	var linkFN = function(scope, element, attrs) {
 		var w = angular.element($window);
-		IN.parse(getTemplate(w));
-	};
+        	element.html(getTemplate(scope.content)).show();
+        	$compile(element.contents())(scope);
+    	};
 
-	return {
-		restrict: 'E',
-		link: linkFN
-	};
+    return {
+        restrict: "E",
+        replace: true,
+        link: linkFN,
+        scope: {
+            content:'='
+        }
+    };
 }]);

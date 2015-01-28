@@ -709,9 +709,10 @@ header p {
   display: block;
   right: 8px;
   height: auto;
-  top: 220px;
+  top: 8px;
   position: fixed;
   margin-left: 50px;
+  z-index: 110;
   border: 1px solid #f0b500;
 }
 

@@ -716,7 +716,7 @@ header p {
   border: 1px solid #f0b500;
 }
 
-.rightCard script{
+.rightCard #linkedIn{
   border: 1px solid #000;
   display: inline-block;
   position: relative;

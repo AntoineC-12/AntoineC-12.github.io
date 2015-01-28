@@ -44,28 +44,15 @@ myAppDirectives.directive('mySection', ['$translate', '$compile', function($tran
 	}
 ]);
 
-myAppDirectives.directive('myLinkedInCard', ['$window', '$compile', function($window, $compile){
-	var linkedInCard='<script id="linkedIn" type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="inline" data-related="false"></script>';
-	var linkedInlink='<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="click" data-text="Antoine POUILLAUDE" data-related="false"></script>';
-
-	var getTemplate = function(w) {
-		var width = w[0].screen.width;
-		if (width > 1635)
-			return linkedInCard;
-		else
-			return linkedInlink;
-	};
-
+myAppDirectives.directive('myLinkedInCard', [ function(){
 	var linkFN = function($scope, element, attrs) {
-		var w = angular.element($window);
-        	element.html(getTemplate(w));
-        	$compile(element.contents())($scope);
         	if(IN.parse)
         		IN.parse();
     	};
 
     return {
         restrict: "E",
+        template: '<script type="IN/MemberProfile" data-id="https://www.linkedin.com/pub/antoine-pouillaude/90/326/644" data-format="click" data-text="Antoine POUILLAUDE" data-related="false"></script>',
         link: linkFN
     };
 }]);

@@ -711,8 +711,7 @@ header p {
   height: auto;
   top: 220px;
   position: fixed;
-  left: 50%;
-  margin-left: 450px;
+  margin-left: 50px;
   border: 1px solid #f0b500;
 }
 

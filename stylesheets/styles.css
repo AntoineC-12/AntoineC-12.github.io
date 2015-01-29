@@ -715,14 +715,7 @@ header p {
   z-index: 110;
 }
 
-#linkedIn {
-  display: none;
-}
-#linkedInS {
-    display: none;
-}
-
-#lang {
+#linkedIn, #linkedInS, #lang, .linkedInlink{
   display: none;
 }
 
@@ -913,12 +906,14 @@ footer {
 }
 
 @media print, screen and (max-width: 1635px) {
-  #linkedInCard {
+  #linkedInCard, #linkedInS {
     display: none;
   }
-  #linkedInS {
-    display: none;
+
+  .linkedInlink {
+    display: inline;
   }
+  
   #linkedIn {
     display: block;
     left: 8px;

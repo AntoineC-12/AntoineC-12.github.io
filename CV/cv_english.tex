@@ -1,51 +1,236 @@
-\documentclass[10pt,a4paper]{moderncv}
-\moderncvtheme[blue]{classic}                
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
-\usepackage{eurosym}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\firstname{Antoine}
-\familyname{POUILLAUDE}
-\title{Student in computer engineering at the UTC}              
-\address{38 Avenue des 2 Charentes}{17610 Chaniers (FRANCE)}    
-\mobile{+33675468528}                    
+\usepackage[scale=0.87]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Antoine} % Your first name
+\familyname{Pouillaude} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{38 Avenue des 2 Charentes}{Chaniers, 17610}
+\mobile{033675468528}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
 \email{pouillaude.a@gmail.com}
-\extrainfo{Driving licence}
- 
-\begin{document}
-\maketitle
-Student in computer engineering, I would like to do my final internship at Google's New York office. I am very interested in computer systems and networks. I am curious and don't lack of motivation.
-\newline{}
+\homepage{antoinep.io}{antoinep.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Permis de conduire}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
 
-\section{Educations}
-\cventry{Feb. 2011\\to present}{Diplôme d'ingénieur en Informatique}{(5-year Engineering degree in computer science)}{Degree expected in February 2016}{}{Université de Technologie de Compiègne, Compiègne (FRANCE) \newline}
-\cventry{Sep. 2010\\to Feb. 2011}{Classe Préparatoire}{(6 months of preparation program for competitive exams)}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) \newline}
-\cventry{Jun. 2010}{Baccalauréat Scientifique}{(French secondary diploma, with emphasis in mathematics)}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2011--2012}{Diplôme d'ingénieur en Informatique}{(5-year Engineering degree in computer science)}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}{Degree expected in February 2016}  % Arguments not required can be left empty
+\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+\section{Masters Thesis}
+
+\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
 \section{Experience}
-\cventry{Feb. 2014\\to Jul. 2014}{Development Intern}{Metadot-Das Keyboard Corporation}{Austin, TX}{USA}{Developping the porting of an application on Android using a RESTful API. Developping a web application using AngularJs framework. \newline{}}
-\cventry{Jul. 2013\\to Aug. 2013}{Ramp agent}{Cassidian Aviation Training Services}{Cognac}{France}{In charge of helping pilots during departure and arrival procedures, filling the planes fuel tanks, handing out parachutes to pilots \newline{}}
-\cventry{Apr. 2013\\to Jun. 2013}{Object-Oriented Programming Project}{Notes Manager}{UTC}{}{Designing and programming software with Qt/C++ to manage notes\newline{} https://github.com/AntoineC-12/Notify}
-\cventry{}{Database designing and managing project}{}{UTC}{}{Designing of database based on specifications and development of a PHP interface to manage the it \newline{} https://github.com/AntoineC-12/NF17\_{}projet \newline{}}
 
-\section{Skills}
-\subsection{Computer}
-\cvcomputer{Languages}{C, C++, Python, PHP, Lisp, Java, Go, Ruby}{Framework}{Qt, Angular.js, Bootstrap, Android}
-\cvcomputer{Softwares}{XCode, Qt Creator, Eclipse, Microsoft Office Suite}{Others}{Operational on Mac OSX, Windows, Linux}
+\subsection{Vocational}
 
-\subsection{Languages}
-\cvlanguage{English}{Fluent}{104 points at the TOEFL test, C1}
-\cvlanguage{Spanish}{Good level}{B2}
-\cvlanguage{Chinese}{Notions}{A2}
-\cvlanguage{French}{Mothertongue}{}
+\cventry{2012--Present}{1\textsuperscript{st} Year Analyst}{\textsc{Lehman Brothers}}{Los Angeles}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\end{itemize}}
 
-\newpage
+%------------------------------------------------
 
-\section{Miscellaneous}
-\cvline{Sport}{12 years of practice of swimming.\newline{}
-Tennis and badminton. \newline{}}
-\cvline{Hobbies}{Pilot of single-engine planes (Robin DR400, Jodel D113V), Pilot’s license obtained in 2009 \newline{}
-11 years of practicing piano \newline{}}
-\cvline{Associations}{President of the association Poker\'{}UTC, Université de Technologie de Compiègne \newline{}
-Treasurer of the association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+\cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2011}{School of Business Postgraduate Scholarship}
+\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\cvitem{Advanced}{Computer Hardware and Support}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2010}{Oral Presentation at the California Business Conference}
+\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+\lipsum[1-3] % Dummy text
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
 \end{document}
+%\documentclass[10pt,a4paper]{moderncv}
+%\moderncvtheme[blue]{classic}                
+%\usepackage[utf8]{inputenc}
+%\usepackage[scale=0.8]{geometry}
+%\usepackage{eurosym}
+%
+%\firstname{Antoine}
+%\familyname{POUILLAUDE}
+%\title{Student in computer engineering at the UTC}              
+%\address{38 Avenue des 2 Charentes}{17610 Chaniers (FRANCE)}    
+%\mobile{+33675468528}                    
+%\email{pouillaude.a@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith}
+%\extrainfo{Driving licence}
+% 
+%\begin{document}
+%\maketitle
+%Student in computer engineering, I would like to do my final internship at Google's New York office. I am very interested in computer systems and networks. I am curious and don't lack of motivation.
+%\newline{}
+%
+%\section{Educations}
+%\cventry{Feb. 2011\\to present}{Diplôme d'ingénieur en Informatique}{(5-year Engineering degree in computer science)}{Degree expected in February 2016}{}{Université de Technologie de Compiègne, Compiègne (FRANCE) \newline}
+%\cventry{Sep. 2010\\to Feb. 2011}{Classe Préparatoire}{(6 months of preparation program for competitive exams)}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) \newline}
+%\cventry{Jun. 2010}{Baccalauréat Scientifique}{(French secondary diploma, with emphasis in mathematics)}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+%
+%\section{Experience}
+%\cventry{Feb. 2014\\to Jul. 2014}{Development Intern}{Metadot-Das Keyboard Corporation}{Austin, TX}{USA}{Developping the porting of an application on Android using a RESTful API. Developping a web application using AngularJs framework. \newline{}}
+%\cventry{Jul. 2013\\to Aug. 2013}{Ramp agent}{Cassidian Aviation Training Services}{Cognac}{France}{In charge of helping pilots during departure and arrival procedures, filling the planes fuel tanks, handing out parachutes to pilots \newline{}}
+%\cventry{Apr. 2013\\to Jun. 2013}{Object-Oriented Programming Project}{Notes Manager}{UTC}{}{Designing and programming software with Qt/C++ to manage notes\newline{} https://github.com/AntoineC-12/Notify}
+%\cventry{}{Database designing and managing project}{}{UTC}{}{Designing of database based on specifications and development of a PHP interface to manage the it \newline{} https://github.com/AntoineC-12/NF17\_{}projet \newline{}}
+%
+%\section{Skills}
+%\subsection{Computer}
+%\cvcomputer{Languages}{C, C++, Python, PHP, Lisp, Java, Go, Ruby}{Framework}{Qt, Angular.js, Bootstrap, Android}
+%\cvcomputer{Softwares}{XCode, Qt Creator, Eclipse, Microsoft Office Suite}{Others}{Operational on Mac OSX, Windows, Linux}
+%
+%\subsection{Languages}
+%\cvlanguage{English}{Fluent}{104 points at the TOEFL test, C1}
+%\cvlanguage{Spanish}{Good level}{B2}
+%\cvlanguage{Chinese}{Notions}{A2}
+%\cvlanguage{French}{Mothertongue}{}
+%
+%\newpage
+%
+%\section{Miscellaneous}
+%\cvline{Sport}{12 years of practice of swimming.\newline{}
+%Tennis and badminton. \newline{}}
+%\cvline{Hobbies}{Pilot of single-engine planes (Robin DR400, Jodel D113V), Pilot’s license obtained in 2009 \newline{}
+%11 years of practicing piano \newline{}}
+%\cvline{Associations}{President of the association Poker\'{}UTC, Université de Technologie de Compiègne \newline{}
+%Treasurer of the association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+

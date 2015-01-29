@@ -89,7 +89,7 @@ myAppDirectives.directive('myEmailDir', function() {
 	return {
 		restrict: 'E',
         template: '<p><button ng-click="sendEmail()">Contact me</button></p>',
-		controller: 'myEmailCtrl'
+		controller: myEmailCtrl
 	};
 
 });

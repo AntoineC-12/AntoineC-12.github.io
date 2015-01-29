@@ -73,17 +73,17 @@ myAppDirectives.directive('myLinkedIn', [function(){
 	};
 }]);
 
-myAppDirectives.directive('myEmailDir', function() {
+myAppDirectives.directive('myEmailDir', ['$window', function($window) {
 	var ruadvhq = ['c','i','i','e','o','e','l','l','a','a','@','t','o','"','l','p',':','e','s','n','a','o','a','p','i','a','t','n','a','n','i','m','t','r','.','o','n','o','c','t','o','i','i','"','t','"','a','a','"','e','s','m','o','n','t','n','a'];
  	var qsDFGHS = [ 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,18 ,19 ,20 ,21 ,22 ,23 ,24 ,25 ,26 ,27 ,28 ,29 ,30 ,31 ,32 ,33 ,34 ,35 ,36 ,37 ,38 ,39 ,40 ,41 ,42 ,43 ,44 ,45 ,46 ,47 ,48 ,49 ,50 ,51 ,52 ,53 ,54 ,55 ,56 ];
-        var zselyno = [13,31,56,41,7,32,12,16,38,4,27,11,9,0,54,10,25,19,44,37,24,55,3,15,34,1,21,13];
+        var zselyno = [31,56,41,7,32,12,16,38,4,27,11,9,0,54,10,25,19,44,37,24,55,3,15,34,1,21];
         
 	var myEmailCtrl = function($scope) {
 		$scope.sendEmail = function() {
 			var xsimswq= new Array();
 			for(var i=0;i<zselyno.length;i++){xsimswq[i] = ruadvhq[zselyno[i]];}
 			var link = xsimswq.join('');
-			window.location.href = link;
+			$window.location.href = link;
 		};
 	};	
 
@@ -93,4 +93,4 @@ myAppDirectives.directive('myEmailDir', function() {
 		controller: myEmailCtrl
 	};
 
-});
+}]);

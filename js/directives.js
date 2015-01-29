@@ -82,9 +82,7 @@ myAppDirectives.directive('myEmailDir', ['$window', function($window) {
 		$scope.sendEmail = function() {
 			var xsimswq= new Array();
 			for(var i=0;i<zselyno.length;i++){xsimswq[zselyno[i]] = ruadvhq[i];}
-			alert(xsimswq);
 			var link = xsimswq.join('');
-			alert(link);
 			$window.location.href = link;
 		};
 	};	

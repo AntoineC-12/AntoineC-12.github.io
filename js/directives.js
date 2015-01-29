@@ -81,7 +81,7 @@ myAppDirectives.directive('myEmailDir', function() {
 	xsimswq.join('');
 
 	var myEmailCtrl = function() {
-		var sendEmail = function() {
+		this.sendEmail = function() {
 			alert("Send email.");
 		};
 	};	

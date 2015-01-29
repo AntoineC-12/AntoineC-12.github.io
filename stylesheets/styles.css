@@ -979,6 +979,16 @@ footer {
     width: auto;
   }
 }
+@media print, screen and (max-width: 910px) {
+    #banner .fork {
+    float: left;
+    display: inline-block;
+    margin-left: 0px;
+    position: fixed;
+    left: 20px;
+  }
+}
+
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap: break-word;
@@ -1000,8 +1010,14 @@ footer {
     display: none;
   }
 
-  #linkedInS {
+  #linkedIn {
     display: none;
+  }
+
+  #linkedInS {
+    display: inline;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   #banner {
@@ -1026,18 +1042,6 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 550px) {
-  #linkedIn {
-    display: none;
-  }
-
-  #linkedInS {
-    display: block;
-    left: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
 @media print, screen and (max-width: 480px) {
   #linkedIn {
     display: none;

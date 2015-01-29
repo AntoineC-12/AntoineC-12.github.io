@@ -911,12 +911,12 @@ footer {
   }
 
   .linkedInlink {
-    display: inline;
+    display: block;
+    left: 8px;
   }
   
   #linkedIn {
     display: block;
-    left: 8px;
     margin-top: 8px;
     margin-bottom: 8px;
   }

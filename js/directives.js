@@ -80,15 +80,18 @@ myAppDirectives.directive('myEmailDir', function() {
 	for(var i=0;i<zselyno.length;i++){xsimswq[zselyno[i]] = ruadvhq[i];}
 	xsimswq.join('');
 
-	var myEmailCtrl = function() {
-		this.sendEmail = function() {
+	var myEmailCtrl = function($scope) {
+		$scope.sendEmail = function() {
 			alert("Send email.");
 		};
 	};	
 
 	return {
 		restrict: 'E',
-        template: '<p><button ng-click="sendEmail()">Contact me</button></p>',
+        	template: '<p><button ng-click="sendEmail()">Contact me</button></p>',
+        	scope: {
+        		value: "=myEmailDir"	
+        	},
 		controller: myEmailCtrl
 	};
 

@@ -89,10 +89,6 @@ myAppDirectives.directive('myEmailDir', function() {
 	return {
 		restrict: 'E',
         	template: '<p><button ng-click="sendEmail()">Contact me</button></p>',
-        	replace: true,
-        	scope: {
-        		value: "=myEmailDir"	
-        	},
 		controller: myEmailCtrl
 	};
 

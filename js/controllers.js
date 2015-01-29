@@ -7,7 +7,6 @@ var myAppControllers = angular.module('myAppControllers', []);
 myAppControllers.controller('resumeCtrl', ['$scope','$translate', 'localStorageService',
   function($scope, $translate, localStorageService) {
   	var prefLang = localStorageService.get('lang');
-  	alert($translate.preferredLanguage());
 	$translate.use(prefLang || $translate.preferredLanguage().match(/^..(?=_)?/)[0]);
   	var lang = $translate.use();
   	$scope.toggleButton = lang == 'fr' ? "English" : "Français";

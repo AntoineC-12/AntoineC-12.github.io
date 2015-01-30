@@ -21,7 +21,7 @@ myAppControllers.controller('resumeCtrl', ['$scope','$translate','$parse','local
   	};
 
   	$scope.parseHtml = function(str) {
-  		return $parse(str);
+  		return $parse($translate(str));
   	};
 
   }]);

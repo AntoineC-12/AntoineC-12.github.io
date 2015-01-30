@@ -4,7 +4,7 @@
 
 var myAppControllers = angular.module('myAppControllers', []);
 
-myAppControllers.controller('resumeCtrl', ['$scope','$translate','$parse','localStorageService',
+myAppControllers.controller('resumeCtrl', ['$scope','$translate','$compile','$filter','localStorageService',
   function($scope, $translate, $parse, localStorageService) {
   	var prefLang = localStorageService.get('lang');
 	$translate.use(prefLang || $translate.preferredLanguage().match(/^..(?=_)?/)[0]);
@@ -21,7 +21,7 @@ myAppControllers.controller('resumeCtrl', ['$scope','$translate','$parse','local
   	};
 
   	$scope.parseHtml = function(str) {
-  		var tr = $translate(str);
+  		var tr = $filter(str)('translate');
   		return $compile(tr)($scope);
   	};
 

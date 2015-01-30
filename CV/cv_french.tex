@@ -1,57 +1,316 @@
-\documentclass[10pt,a4paper]{moderncv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'               
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
-\usepackage{eurosym}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\firstname{Antoine}
-\familyname{POUILLAUDE}
-\title{Étudiant en ingénierie informatique à l'UTC}              
-\address{38, Avenue des 2 Charentes}{17610 Chaniers (FRANCE)}    
-\mobile{+33675468528}                    
+\usepackage[scale=0.87]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Antoine} % Your first name
+\familyname{Pouillaude} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{38 Avenue des 2 Charentes}{Chaniers, 17610}
+\mobile{033675468528}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
 \email{pouillaude.a@gmail.com}
-%\homepage{antony-po.net}
-%\photo[2.5cm][0.4pt]{pictures/picture.jpg} 
+\homepage{antoinep.io}{antoinep.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{Permis de conduire}
- 
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
-\makecvtitle
 
+\makecvtitle % Print the CV title
 
-Étudiant en ingénierie informatique à l'Université de Technologie de Compiègne (bac +4) et étant disponible de 1 Janvier au 14 Février 2014 je postule dans votre société pour cette période et ainsi financer des études à l'étranger.
-\newline{}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\section{Diplômes et études}
-\cventry{Fev. 2011\\à aujourd'hui}{Diplôme d'ingénieur en Informatique (En cours)}{}{}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}
-\cventry{Sep. 2010\\à Fev. 2011}{Classe Préparatoire aux grandes écoles}{}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) }
-\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité mathématiques}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+\section{Education}
 
-\section{Expériences}
-\cventry{Fev. 2014\\à Juil. 2014}{Développeur stagiaire}{Metadot Corporation}{Austin, TX}{United States of America}{Développement d'une application sur Android et AngularJs pouvant gérer des milliers d'utilisateurs connectés simultanément.}
-\cventry{Juil. 2013\\à Aout 2013}{Agent de piste}{Cassidian Aviation Training Services}{Cognac}{France}{Assistance aux pilotes lors des procédures de départ et d'arrivée, remplissage des réservoirs des avions, distribution des parachutes}
-\cventry{Avr. 2013\\à Juin 2013}{Projet de programmation orienté objet}{Notes Manager}{UTC}{}{Conception et programmation d'une application de gestion de notes en C++ avec Qt.}
-\cventry{}{Projet de conception et de gestion de bases de données}{}{UTC}{}{Conception d'une base de données en suivant un cahier des charges, programmation d'une interface PHP pour la gestion de la base.}
-\cventry{Juil. 2012\\à Aout 2012}{Responsable du bac}{Mairie de Chaniers}{Chaniers}{France}{Responsable de la traversée des personnes et de la conduite de l'embarcation}
+\cventry{Fev. 2011 à\\aujourd'hui}{Diplôme d'ingénieur en Informatique}{(En cours)}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}{Diplômé en Février 2016}  % Arguments not required can be left empty
+\cventry{Sept. 2014 à\\Dec. 2014}{Semestre d'échange}{Master Science de l'Inforamtique}{}{University of Rhode Island, Kingston, RI (USA)}{}
+\cventry{Sept. 2010 à\\Fev. 2011}{Classe Préparatoire}{Maths, Physique, Sciences de l'ingénieur}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE)}{}
+\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité Mathématique, Mention Bien}{}{Lycée Bernard Palissy, Saintes (FRANCE)}{}
+
+%\cventry{Fev. 2011\\à aujourd'hui}{Diplôme d'ingénieur en Informatique (En cours)}{}{}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}
+%\cventry{Sep. 2010\\à Fev. 2011}{Classe Préparatoire aux grandes écoles}{}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) }
+%\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité mathématiques}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+
+%\section{Masters Thesis}
+%
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{Vocational}
+
+\cventry{Jan. 2015 à\\Fev. 2015}{Technicien informatique}{\textsc{Groupe NVL}}{Angoulême, FRANCE}{}{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}
+%\newline{}\newline{}
+%Detailed achievements:
+%\begin{itemize}
+%\item Learned how to make amazing coffee
+%\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+%\begin{itemize}
+%\item Paper jam
+%\item Software issues:
+%\begin{itemize}
+%\item Word not sending the correct data to printer
+%\item Windows trying to print in letter format
+%\end{itemize}
+%\item Coffee spilled inside printer
+%\end{itemize}
+%\item Broke the office record for number of kitten pictures in cubicle
+%\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{Fev. 2014--\\Juil. 2014}{Assistant ingénieur stagiaire}{\textsc{Metadot Corporation}}{Austin, TX USA}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+\cventry{Juil. 2013--\\Août 2013}{Agent de piste}{\textsc{Cassidian Aviation Training Services}}{Cognac, FRANCE}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+\cventry{Juil. 2012--\\Août 2012}{Responsable du bac}{\textsc{City Hall of Chaniers}}{Chaniers, FRANCE}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+%\subsection{Miscellaneous}
+%
+%\cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
 
 \section{Compétences}
-\subsection{Informatique}
-\cvcomputer{Langages}{C, C++, Python, Java, Javascript, Ruby, Lisp, Tex, HTML, MASM}{Framework}{Qt, AngularJs, Android, NodeJS}
-\cvcomputer{Logiciels}{XCode, Qt Creator, Yeoman, Eclipse, Suite Microsoft Office}{Autres}{Opérationnel sur Mac OSX, Windows, Linux}
 
-\subsection{Langues}
-\cvlanguage{Anglais}{Courant}{104 points au test du TOEFL, C1}
-\cvlanguage{Espagnol}{Bon niveau}{B2}
-\cvlanguage{Chinois}{Notions}{A2}
-\cvlanguage{Français}{Langue maternelle}{}
+%----------------------------------------------------------------------------------------
+\subsection{Compétences informatiques}
+\cvitem{Basique}{Ruby on Rails, \LaTeX, Perl, PHP, CSS}
+\cvitem{Intermédiaire}{Python, Mathematica, Lisp, MASM, AngularJS, Javascript, HTML/XML, Go, SQL, Bash}
+\cvitem{Advancé}{C/C++, Qt Framework, Java, Android Framework, Ruby}
+\cvitem{}{Operationel sur Linux, Mac OSX, Windows}
 
-%\newpage
+%----------------------------------------------------------------------------------------
+\subsection{Langages}
+\cvitemwithcomment{Français}{Mothertongue}{}
+\cvitemwithcomment{Anglais}{Advanced}{Conversation courante, TOEFL: 104, Séjour d'un an aux USA}
+\cvitemwithcomment{Espagnol}{Bonne connaissance}{Phrases communes.}
+\cvitemwithcomment{Chinois}{Notions}{Mots basiques}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+%
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+%
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
 
 \section{Divers}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 \cvline{Loisirs}{Pilote d'avions monomoteurs (Robin DR400, Jodel D113V), brevet obtenu en 2009 \newline{}
 Pratique du piano durant 11 ans}
+
 \cvline{Sports}{12 ans de natation en club.\newline{}
 Tennis et badminton.}
+
 \cvline{Associations}{Président de l'association Poker\'{}UTC, Université de Technologie de Compiègne \newline{}
-Trésorier de l'association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+Trésorier de l'association FabLab\'{}UTC, Université de Technologie de Compiègne}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
 \end{document}
+%\documentclass[10pt,a4paper]{moderncv}
+%\moderncvtheme[blue]{classic}                
+%\usepackage[utf8]{inputenc}
+%\usepackage[scale=0.8]{geometry}
+%\usepackage{eurosym}
+%
+%\firstname{Antoine}
+%\familyname{POUILLAUDE}
+%\title{Student in computer engineering at the UTC}              
+%\address{38 Avenue des 2 Charentes}{17610 Chaniers (FRANCE)}    
+%\mobile{+33675468528}                    
+%\email{pouillaude.a@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith}
+%\extrainfo{Driving licence}
+% 
+%\begin{document}
+%\maketitle
+%Student in computer engineering, I would like to do my final internship at Google's New York office. I am very interested in computer systems and networks. I am curious and don't lack of motivation.
+%\newline{}
+%
+%\section{Educations}
+%\cventry{Feb. 2011\\to present}{Diplôme d'ingénieur en Informatique}{(5-year Engineering degree in computer science)}{Degree expected in February 2016}{}{Université de Technologie de Compiègne, Compiègne (FRANCE) \newline}
+%\cventry{Sep. 2010\\to Feb. 2011}{Classe Préparatoire}{(6 months of preparation program for competitive exams)}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) \newline}
+%\cventry{Jun. 2010}{Baccalauréat Scientifique}{(French secondary diploma, with emphasis in mathematics)}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+%
+%\section{Experience}
+%\cventry{Feb. 2014\\to Jul. 2014}{Development Intern}{Metadot-Das Keyboard Corporation}{Austin, TX}{USA}{Developping the porting of an application on Android using a RESTful API. Developping a web application using AngularJs framework. \newline{}}
+%\cventry{Jul. 2013\\to Aug. 2013}{Ramp agent}{Cassidian Aviation Training Services}{Cognac}{France}{In charge of helping pilots during departure and arrival procedures, filling the planes fuel tanks, handing out parachutes to pilots \newline{}}
+%\cventry{Apr. 2013\\to Jun. 2013}{Object-Oriented Programming Project}{Notes Manager}{UTC}{}{Designing and programming software with Qt/C++ to manage notes\newline{} https://github.com/AntoineC-12/Notify}
+%\cventry{}{Database designing and managing project}{}{UTC}{}{Designing of database based on specifications and development of a PHP interface to manage the it \newline{} https://github.com/AntoineC-12/NF17\_{}projet \newline{}}
+%
+%\section{Skills}
+%\subsection{Computer}
+%\cvcomputer{Languages}{C, C++, Python, PHP, Lisp, Java, Go, Ruby}{Framework}{Qt, Angular.js, Bootstrap, Android}
+%\cvcomputer{Softwares}{XCode, Qt Creator, Eclipse, Microsoft Office Suite}{Others}{Operational on Mac OSX, Windows, Linux}
+%
+%\subsection{Languages}
+%\cvlanguage{English}{Fluent}{104 points at the TOEFL test, C1}
+%\cvlanguage{Spanish}{Good level}{B2}
+%\cvlanguage{Chinese}{Notions}{A2}
+%\cvlanguage{French}{Mothertongue}{}
+%
+%\newpage
+%
+%\section{Miscellaneous}
+%\cvline{Sport}{12 years of practice of swimming.\newline{}
+%Tennis and badminton. \newline{}}
+%\cvline{Hobbies}{Pilot of single-engine planes (Robin DR400, Jodel D113V), Pilot’s license obtained in 2009 \newline{}
+%11 years of practicing piano \newline{}}
+%\cvline{Associations}{President of the association Poker\'{}UTC, Université de Technologie de Compiègne \newline{}
+%Treasurer of the association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+%\documentclass[10pt,a4paper]{moderncv}
+%\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+%\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'               
+%\usepackage[utf8]{inputenc}
+%\usepackage[scale=0.8]{geometry}
+%\usepackage{eurosym}
+%
+%\firstname{Antoine}
+%\familyname{POUILLAUDE}
+%\title{Étudiant en ingénierie informatique à l'UTC}              
+%\address{38, Avenue des 2 Charentes}{17610 Chaniers (FRANCE)}    
+%\mobile{+33675468528}                    
+%\email{pouillaude.a@gmail.com}
+%%\homepage{antony-po.net}
+%%\photo[2.5cm][0.4pt]{pictures/picture.jpg} 
+%\extrainfo{Permis de conduire}
+% 
+%\begin{document}
+%\makecvtitle
+%
+%
+%Étudiant en ingénierie informatique à l'Université de Technologie de Compiègne (bac +4) et étant disponible de 1 Janvier au 14 Février 2014 je postule dans votre société pour cette période et ainsi financer des études à l'étranger.
+%\newline{}
+%
+%\section{Diplômes et études}
+%\cventry{Fev. 2011\\à aujourd'hui}{Diplôme d'ingénieur en Informatique (En cours)}{}{}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}
+%\cventry{Sep. 2010\\à Fev. 2011}{Classe Préparatoire aux grandes écoles}{}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) }
+%\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité mathématiques}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+%
+%\section{Expériences}
+%\cventry{Fev. 2014\\à Juil. 2014}{Développeur stagiaire}{Metadot Corporation}{Austin, TX}{United States of America}{Développement d'une application sur Android et AngularJs pouvant gérer des milliers d'utilisateurs connectés simultanément.}
+%\cventry{Juil. 2013\\à Aout 2013}{Agent de piste}{Cassidian Aviation Training Services}{Cognac}{France}{Assistance aux pilotes lors des procédures de départ et d'arrivée, remplissage des réservoirs des avions, distribution des parachutes}
+%\cventry{Avr. 2013\\à Juin 2013}{Projet de programmation orienté objet}{Notes Manager}{UTC}{}{Conception et programmation d'une application de gestion de notes en C++ avec Qt.}
+%\cventry{}{Projet de conception et de gestion de bases de données}{}{UTC}{}{Conception d'une base de données en suivant un cahier des charges, programmation d'une interface PHP pour la gestion de la base.}
+%\cventry{Juil. 2012\\à Aout 2012}{Responsable du bac}{Mairie de Chaniers}{Chaniers}{France}{Responsable de la traversée des personnes et de la conduite de l'embarcation}
+%
+%\section{Compétences}
+%\subsection{Informatique}
+%\cvcomputer{Langages}{C, C++, Python, Java, Javascript, Ruby, Lisp, Tex, HTML, MASM}{Framework}{Qt, AngularJs, Android, NodeJS}
+%\cvcomputer{Logiciels}{XCode, Qt Creator, Yeoman, Eclipse, Suite Microsoft Office}{Autres}{Opérationnel sur Mac OSX, Windows, Linux}
+%
+%\subsection{Langues}
+%\cvlanguage{Anglais}{Courant}{104 points au test du TOEFL, C1}
+%\cvlanguage{Espagnol}{Bon niveau}{B2}
+%\cvlanguage{Chinois}{Notions}{A2}
+%\cvlanguage{Français}{Langue maternelle}{}
+%
+%%\newpage
+%
+%\section{Divers}
+%\cvline{Loisirs}{Pilote d'avions monomoteurs (Robin DR400, Jodel D113V), brevet obtenu en 2009 \newline{}
+%Pratique du piano durant 11 ans}
+%\cvline{Sports}{12 ans de natation en club.\newline{}
+%Tennis et badminton.}
+%\cvline{Associations}{Président de l'association Poker\'{}UTC, Université de Technologie de Compiègne \newline{}
+%Trésorier de l'association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+%\end{document}

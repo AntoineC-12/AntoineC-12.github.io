@@ -8,7 +8,7 @@
 			"MADE_WITH": " produite avec ",
 			"LINKEDIN": "Accéder à mon profil LinkedIn : ",
 			"ABOUT": "Présentation",
-			"ABOUT_BODY": "Étudiant en ingénierie informatique avec spécialisation dans les réseaux, je recherche un stage de fin d'étude d'une durée de 6 mois qui, à terme, viendra conclure ma formation et me permettra donc d'obtenir mon diplôme en Février 2016. À cette date, je ne connaît pas les dates exactes. Ces-dernières me seront communiquées très prochainement. Cependant, étant disponible à partir du 1<sup>er</sup> Juillet 2015",
+			"ABOUT_BODY": "Étudiant en ingénierie informatique avec spécialisation dans les réseaux, je recherche un stage de fin d'étude d'une durée de 6 mois qui, à terme, viendra conclure ma formation et me permettra donc d'obtenir mon diplôme en Février 2016. À cette date, je ne connaît pas les dates exactes. Ces-dernières me seront communiquées très prochainement. Cependant, étant disponible à partir du 1er {{ 'EDU_BAC_TRANS' | translate }} Juillet 2015",
 			"EDU": "Diplômes et études",
 			"EDU_INGE_TRANS": ", (En cours)",
 			"EDU_INGE_PERIOD": "Fev. 2011-aujourd'hui",

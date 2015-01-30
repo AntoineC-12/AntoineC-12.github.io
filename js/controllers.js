@@ -5,7 +5,7 @@
 var myAppControllers = angular.module('myAppControllers', []);
 
 myAppControllers.controller('resumeCtrl', ['$scope','$translate','$compile','$filter','localStorageService',
-  function($scope, $translate, $parse, localStorageService) {
+  function($scope, $translate, $compile, $filter, localStorageService) {
   	var prefLang = localStorageService.get('lang');
 	$translate.use(prefLang || $translate.preferredLanguage().match(/^..(?=_)?/)[0]);
   	var lang = $translate.use();

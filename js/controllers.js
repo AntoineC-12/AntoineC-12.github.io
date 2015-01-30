@@ -20,8 +20,4 @@ myAppControllers.controller('resumeCtrl', ['$scope','$translate','$parse','local
   		localStorageService.set('lang', langKey);
   	};
 
-  	$scope.parseHtml = function(str) {
-  		return $parse($translate(str))($scope);
-  	};
-
   }]);

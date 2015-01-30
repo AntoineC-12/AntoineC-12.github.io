@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.21)  30 JAN 2015 11:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.21)  30 JAN 2015 14:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -748,25 +748,21 @@ File: mt-mvs.cfg 2006/07/05 v1.1 microtype config. file: Marvosym Euro (RS)
 )
 \makecvtitlepicturebox=\box30
 
-<pictures/picture.jpg, id=39, 212.29312pt x 274.02374pt>
-File: pictures/picture.jpg Graphic file (type jpg)
+<pictures/picture_2.jpg, id=39, 251.94125pt x 251.94125pt>
+File: pictures/picture_2.jpg Graphic file (type jpg)
 
-<use pictures/picture.jpg>
-Package pdftex.def Info: pictures/picture.jpg used on input line 60.
-(pdftex.def)             Requested size: 70.0pt x 90.35284pt.
+<use pictures/picture_2.jpg>
+Package pdftex.def Info: pictures/picture_2.jpg used on input line 60.
+(pdftex.def)             Requested size: 70.0pt x 69.99716pt.
 \makecvtitledetailswidth=\skip69
 \makecvtitlepicturewidth=\skip70
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
-
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 68.
+(Font)              <10.95> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 68.
+(Font)              <8> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 68.
+(Font)              <6> on input line 60.
+
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
 (Font)              Font shape `T1/lmr/m/sc' tried instead on input line 90.
@@ -777,7 +773,7 @@ Package microtype Info: Character `029' is missing
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictu
-res/picture.jpg>]
+res/picture_2.jpg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
  [2]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
@@ -790,13 +786,13 @@ Package rerunfilecheck Info: File `cv_french.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 12376 strings out of 493315
- 180124 string characters out of 6137904
- 393953 words of memory out of 5000000
- 15603 multiletter control sequences out of 15000+600000
- 72784 words of font info for 75 fonts, out of 8000000 for 9000
+ 12383 strings out of 493315
+ 180232 string characters out of 6137904
+ 394155 words of memory out of 5000000
+ 15605 multiletter control sequences out of 15000+600000
+ 75890 words of font info for 78 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,13n,67p,775b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,12n,67p,775b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2013/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2013/texmf-
@@ -804,13 +800,14 @@ dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2013/texmf-dist/fonts
 /type1/public/lm/lmss17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
 lic/lm/lmss8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmss
 bx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso12.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
 Output written on /Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github
-.io/CV/.texpadtmp/cv_french.pdf (2 pages, 203613 bytes).
+.io/CV/.texpadtmp/cv_french.pdf (2 pages, 222949 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  11 named destinations out of 1000 (max. 500000)
- 24134 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 26182 words of extra memory for PDF output out of 29859 (max. 10000000)
 

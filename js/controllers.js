@@ -4,8 +4,8 @@
 
 var myAppControllers = angular.module('myAppControllers', ['ngSanitize']);
 
-myAppControllers.controller('resumeCtrl', ['$scope','$translate','$sce','$filter','localStorageService',
-  function($scope, $translate, $sce, $filter, localStorageService) {
+myAppControllers.controller('resumeCtrl', ['$scope','$translate','$sanitize','$filter','localStorageService',
+  function($scope, $translate, $sanitize, $filter, localStorageService) {
   	var prefLang = localStorageService.get('lang');
 	$translate.use(prefLang || $translate.preferredLanguage().match(/^..(?=_)?/)[0]);
   	var lang = $translate.use();
@@ -22,7 +22,7 @@ myAppControllers.controller('resumeCtrl', ['$scope','$translate','$sce','$filter
 
   	$scope.parseHtml = function(str) {
   		var tr = $filter('translate')(str);
-  		return $sce.trustAsHtml(tr);
+  		return $sanitize(tr);
   	};
 
   }]);

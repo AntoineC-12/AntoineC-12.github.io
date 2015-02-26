@@ -70,7 +70,7 @@
 			"EXP_PRO": "Expérience professionelle",
 			"EXP_PRO_NVL": "Technicien informatique",
 			"EXP_PRO_NVL_PERIOD" : "Jan. 2015-Fev. 2015",
-			"EXP_PRO_NVL_DESC": " Il m'a été demandé de mettre en place un système de SIEM (Security and Information Event Manager) sur le réseau de la société. Pour ce faire, j'ai  étudié les produits de plusieurs fournisseurs et proposé une solution. Nous avons finalement décidé d'utiliser un logiciel Open Source : OSSIM (Open Source Security Information Management). À ce jour, je suis en train de mettre en place la solution dans un environnement de test.",
+			"EXP_PRO_NVL_DESC": " Il m'a été demandé de mettre en place un système de SIEM (Security and Information Event Manager) sur le réseau de la société. Pour ce faire, j'ai  étudié les produits de plusieurs fournisseurs et proposé une solution. Nous avons finalement décidé d'utiliser un logiciel Open Source : OSSIM (Open Source Security Information Management). J'ai installé le système sur un serveur et celui-ci collectait les journaux des éléments les plus importants du réseaux.",
 			"EXP_PRO_MET": "Assistant ingénieur stagiaire",
 			"EXP_PRO_MET_PERIOD": "Fev. 2014-Juillet 2014",
 			"EXP_PRO_MET_DESC_P1": "J'ai travaillé en collaboration avec un autre stagiaire pour créer le portage de l'application web ",

@@ -70,7 +70,7 @@
 			"EXP_PRO": "Professional",
 			"EXP_PRO_NVL": "Computer Technician",
 			"EXP_PRO_NVL_PERIOD" : "Jan. 2015-Feb. 2015",
-			"EXP_PRO_NVL_DESC": "I was in charge of setting up a SIEM (Security Information and Event Management) system on their network. I had to study systems from different providers and suggest a solution. We decided to use an open source system (OSSIM). As of now I am currently setting up the software on a testing environement.",
+			"EXP_PRO_NVL_DESC": "I was in charge of setting up a SIEM (Security Information and Event Management) system on their network. I had to study systems from different providers and suggest a solution. We decided to use an open source system (OSSIM). I installed the system on a server and it collected the logs of the most relevant components of the network.",
 			"EXP_PRO_MET": "Assistant engineer intern",
 			"EXP_PRO_MET_PERIOD": "Feb. 2014-Jul. 2014",
 			"EXP_PRO_MET_DESC_P1": "I was asked to work in collaboration with another intern to create the porting of ",

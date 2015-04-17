@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.21)  31 JAN 2015 16:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.21)  30 MAR 2015 14:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -774,23 +774,23 @@ Package microtype Info: Character `029' is missing
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictu
 res/picture_2.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
  [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
 
 (/Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github.io/CV/.texpadtmp
 /cv_french.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `cv_french.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 12385 strings out of 493315
- 180258 string characters out of 6137904
- 394164 words of memory out of 5000000
+ 12383 strings out of 493315
+ 180232 string characters out of 6137904
+ 394142 words of memory out of 5000000
  15605 multiletter control sequences out of 15000+600000
- 76036 words of font info for 79 fonts, out of 8000000 for 9000
+ 75890 words of font info for 78 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,12n,67p,775b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
@@ -804,7 +804,7 @@ bx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso10.pfb>
 al/texlive/2013/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/local/texliv
 e/2013/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb>
 Output written on /Users/Antoine/Documents/ProjetInfo/Github/AntoineC-12.github
-.io/CV/.texpadtmp/cv_french.pdf (2 pages, 222906 bytes).
+.io/CV/.texpadtmp/cv_french.pdf (2 pages, 222865 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream

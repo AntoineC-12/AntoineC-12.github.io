@@ -1,55 +1,235 @@
-\documentclass[10pt,a4paper]{moderncv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'               
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
-\usepackage{eurosym}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\firstname{Antoine}
-\familyname{POUILLAUDE}
-\title{Étudiant en ingénierie informatique à l'UTC}              
-\address{38, Avenue des 2 Charentes}{17610 Chaniers}    
-\mobile{+33675468528}                    
-\email{pouillaude.a@gmail.com}
-%\homepage{antony-po.net}
-%\photo[2.5cm][0.4pt]{pictures/picture.jpg} 
+\usepackage[scale=0.87]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Antoine} % Your first name
+\familyname{Pouillaude} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{38 Avenue des 2 Charentes}{Chaniers, 17610}
+\mobile{033675468528}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{antoine@antoinep.io}
+\homepage{antoinep.io}{antoinep.io} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{Permis de conduire}
- 
+\photo[70pt][0.4pt]{pictures/picture_2} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{Étudiant en ingénierie informatique à l'Université de Technologie de Compiègne (bac +4) disponible du 1 Juillet au 31 Août 2015 pour un travail saisonnier et pouvoir ainsi financer mes études. Je suis motivé, dynamique et ponctuel.}
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
-\makecvtitle
 
+\makecvtitle % Print the CV title
 
-Étudiant en ingénierie informatique à l'Université de Technologie de Compiègne (bac +4) disponible du 1 Juillet au 31 Août 2015 pour un travail saisonnier et pouvoir ainsi financer mes études. Je suis motivé, dynamique et ponctuel.
-\newline{}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\section{Diplômes et études}
-\cventry{Fev. 2011\\à aujourd'hui}{Diplôme d'ingénieur en Informatique (En cours)}{}{}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}
-\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité mathématiques}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+\section{Education}
+
+\cventry{Fev. 2011 à\\aujourd'hui}{Diplôme d'ingénieur en Informatique}{(En cours)}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}{Diplômé en Février 2016}  % Arguments not required can be left empty
+\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité Mathématique, Mention Bien}{}{Lycée Bernard Palissy, Saintes (FRANCE)}{}
+
+%\cventry{Fev. 2011\\à aujourd'hui}{Diplôme d'ingénieur en Informatique (En cours)}{}{}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}
+%\cventry{Sep. 2010\\à Fev. 2011}{Classe Préparatoire aux grandes écoles}{}{}{}{Lycée Michel de Montaigne, Bordeaux (FRANCE) }
+%\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité mathématiques}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+
+%\section{Masters Thesis}
+%
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
 \section{Expériences}
-\cventry{Fev. 2014\\à Juil. 2014}{Développeur stagiaire}{Metadot Corporation}{Austin, TX}{United States of America}{Développement d'une application sur Android et AngularJs pouvant gérer des milliers d'utilisateurs connectés simultanément.}
-\cventry{Juil. 2013\\à Aout 2013}{Agent de piste}{Cassidian Aviation Training Services}{Cognac}{France}{Assistance aux pilotes lors des procédures de départ et d'arrivée, remplissage des réservoirs des avions, distribution des parachutes}
-%\cventry{Avr. 2013\\à Juin 2013}{Projet de programmation orienté objet}{Notes Manager}{UTC}{}{Conception et programmation d'une application de gestion de notes en C++ avec Qt.}
-%\cventry{}{Projet de conception et de gestion de bases de données}{}{UTC}{}{Conception d'une base de données en suivant un cahier des charges, programmation d'une interface PHP pour la gestion de la base.}
-\cventry{Juil. 2012\\à Aout 2012}{Responsable du bac}{Mairie de Chaniers}{Chaniers}{France}{Responsable de la traversée des personnes et de la conduite de l'embarcation}
+\cventry{Jan. 2015--\\Fev. 2015}{Technicien informatique}{\textsc{Groupe NVL}}{Angoulême}{}{Mise en place d'un système de SIEM (Security and Information Event Manager). Étude des produits de plusieurs fournisseurs et proposition d'une solution.Utilisation du logiciel Open Source : OSSIM.}
+\cventry{Fev. 2014--\\Jul. 2014}{Assistant ingénieur stagiaire}{\textsc{Metadot Corporation}}{Austin, TX USA}{}{Création du portage de l'application web Mojohelpdesk sur Android. Développement du nouveau design de l'interface web avec AngularJS et Bootstrap.}
+\cventry{Juil. 2012\\à Aout 2012}{Responsable du bac}{\textsc{Mairie de Chaniers}}{Chaniers}{}{Responsable de la traversée des personnes et de la conduite de l'embarcation.}
+
+%------------------------------------------------
+
+%\subsection{Miscellaneous}
+%
+%\cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+%
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
 
 \section{Compétences}
+
+%----------------------------------------------------------------------------------------
 \subsection{Informatique}
 \cvcomputer{Langages}{C, C++, Python, Java, Javascript, Ruby, Lisp, Tex, HTML, MASM}{Autres}{Opérationnel sur Mac OSX, Windows, Linux, Suite Microsoft Office}
 
+%----------------------------------------------------------------------------------------
 \subsection{Langues}
-\cvlanguage{Anglais}{Courant}{985 points au TOEIC, C1}
-\cvlanguage{Espagnol}{Bon niveau}{B2}
-\cvlanguage{Français}{Langue maternelle}{}
+\cvitemwithcomment{Français}{Langue maternelle}{}
+\cvitemwithcomment{Anglais}{Courant}{TOEIC: 985, Séjour d'un an aux USA}
+\cvitemwithcomment{Espagnol}{Bonne connaissance}{Phrases communes.}
+\cvitemwithcomment{Chinois}{Notions}{Mots basiques}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+%
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+%
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+%\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
 \subsection{Autres}
 \cvline{Secourisme}{Brevet de secourisme.}
 
-%\newpage
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
 
 \section{Divers}
-\cvline{Loisirs}{Pratique du piano durant 11 ans}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvline{Loisirs}{Pilote d'avions monomoteurs (Robin DR400, Jodel D113V), brevet obtenu en 2009 \newline{}
+Pratique du piano durant 11 ans}
+
 \cvline{Sports}{12 ans de natation en club.\newline{}
-Tennis et course à pied.}
-\cvline{Associations}{
-Trésorier de l'association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+Tennis et badminton.}
+
+\cvline{Associations}{Trésorier de l'association FabLab\'{}UTC, Université de Technologie de Compiègne}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
 \end{document}
+%\documentclass[10pt,a4paper]{moderncv}
+%\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+%\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'               
+%\usepackage[utf8]{inputenc}
+%\usepackage[scale=0.8]{geometry}
+%\usepackage{eurosym}
+%
+%\firstname{Antoine}
+%\familyname{POUILLAUDE}
+%\title{Étudiant en ingénierie informatique à l'UTC}              
+%\address{38, Avenue des 2 Charentes}{17610 Chaniers}    
+%\mobile{+33675468528}                    
+%\email{pouillaude.a@gmail.com}
+%%\homepage{antony-po.net}
+%%\photo[2.5cm][0.4pt]{pictures/picture.jpg} 
+%\extrainfo{Permis de conduire}
+% 
+%\begin{document}
+%\makecvtitle
+%
+%
+%Étudiant en ingénierie informatique à l'Université de Technologie de Compiègne (bac +4) disponible du 1 Juillet au 31 Août 2015 pour un travail saisonnier et pouvoir ainsi financer mes études. Je suis motivé, dynamique et ponctuel.
+%\newline{}
+%
+%\section{Diplômes et études}
+%\cventry{Fev. 2011\\à aujourd'hui}{Diplôme d'ingénieur en Informatique (En cours)}{}{}{}{Université de Technologie de Compiègne, Compiègne (FRANCE)}
+%\cventry{Juin 2010}{Baccalauréat Scientifique}{Spécialité mathématiques}{}{}{Lycée Bernard Palissy, Saintes (FRANCE)}
+%
+%\section{Expériences}
+%\cventry{Fev. 2014\\à Juil. 2014}{Développeur stagiaire}{Metadot Corporation}{Austin, TX}{United States of America}{Développement d'une application sur Android et AngularJs pouvant gérer des milliers d'utilisateurs connectés simultanément.}
+%\cventry{Juil. 2013\\à Aout 2013}{Agent de piste}{Cassidian Aviation Training Services}{Cognac}{France}{Assistance aux pilotes lors des procédures de départ et d'arrivée, remplissage des réservoirs des avions, distribution des parachutes}
+%%\cventry{Avr. 2013\\à Juin 2013}{Projet de programmation orienté objet}{Notes Manager}{UTC}{}{Conception et programmation d'une application de gestion de notes en C++ avec Qt.}
+%%\cventry{}{Projet de conception et de gestion de bases de données}{}{UTC}{}{Conception d'une base de données en suivant un cahier des charges, programmation d'une interface PHP pour la gestion de la base.}
+%\cventry{Juil. 2012\\à Aout 2012}{Responsable du bac}{Mairie de Chaniers}{Chaniers}{France}{Responsable de la traversée des personnes et de la conduite de l'embarcation}
+%
+%\section{Compétences}
+%\subsection{Informatique}
+%\cvcomputer{Langages}{C, C++, Python, Java, Javascript, Ruby, Lisp, Tex, HTML, MASM}{Autres}{Opérationnel sur Mac OSX, Windows, Linux, Suite Microsoft Office}
+%
+%\subsection{Langues}
+%\cvlanguage{Anglais}{Courant}{985 points au TOEIC, C1}
+%\cvlanguage{Espagnol}{Bon niveau}{B2}
+%\cvlanguage{Français}{Langue maternelle}{}
+%\subsection{Autres}
+%\cvline{Secourisme}{Brevet de secourisme.}
+%
+%%\newpage
+%
+%\section{Divers}
+%\cvline{Loisirs}{Pratique du piano durant 11 ans}
+%\cvline{Sports}{12 ans de natation en club.\newline{}
+%Tennis et course à pied.}
+%\cvline{Associations}{
+%Trésorier de l'association FabLab\'{}UTC, Université de Technologie de Compiègne \newline{}(assos.utc.fr/fablab)}
+%\end{document}

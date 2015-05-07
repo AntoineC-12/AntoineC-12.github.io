@@ -106,5 +106,6 @@
 			"MISC_ASS": "Association",
 			"MISC_ASS_POKER": "President of the association Poker'UTC, Université de Technologie de Compiègne",
 			"MISC_ASS_FAB": "Treasurer of the association FabLab'UTC, Université de Technologie de Compiègne",
-			"CONTACT": "Contact me"
+			"CONTACT": "Contact me",
+			"FOOTER_RES": "<a href=\"./CV/cv_english.pdf\">View my résumé in pdf</a>"
 }
